@@ -105,6 +105,7 @@ namespace QualisysRealTime.Unity
                     markerGO.transform.parent = this.gameObject.transform;
                     markerGO.transform.localScale = Vector3.one * markerScale;
                     markerGO.SetActive(false);
+                    markerGO.GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
                     markerGOs.Add(markerGO);
                 }
             }

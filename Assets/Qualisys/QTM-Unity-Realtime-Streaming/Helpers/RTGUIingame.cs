@@ -110,5 +110,9 @@ namespace QualisysRealTime.Unity
             else
                 connectionStatus = "Connection error - check console";
         }
+
+        void Update() {
+            if (Input.GetKeyDown(KeyCode.C)) OnConnect();
+        }
     }
 }

@@ -15,7 +15,8 @@ public class GetHitByJoint : MonoBehaviour
     void Awake() {
         audioFeedbackSource = gameObject.GetComponent<AudioSource>();
         // object prefab starts at 0 y scale, make it our desired height off the floor
-        gameObject.transform.localScale += new Vector3(0, heightFromFloor * 2f, 0);
+        gameObject.transform.localScale += new Vector3(0, heightFromFloor, 0);
+        gameObject.transform.position += new Vector3(0, heightFromFloor, 0);
     }
 
     void OnTriggerEnter(Collider other) {
