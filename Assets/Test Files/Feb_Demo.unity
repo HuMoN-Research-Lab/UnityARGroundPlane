@@ -181,7 +181,7 @@ Transform:
   - {fileID: 86302502}
   - {fileID: 261433797}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &86302498
 GameObject:
@@ -367,7 +367,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -477,7 +482,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -587,7 +597,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -691,7 +706,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -768,11 +788,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa55f93f2f1a6184eb4f383351bef5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: Put QTM 6DOF object name here
-  PositionOffset: {x: 0, y: 0, z: 0}
+  ObjectName: RightFoot
+  PositionOffset: {x: -1.5, y: 0, z: 0.43}
   RotationOffset: {x: 0, y: 0, z: 0}
   useObjectOrientation: 1
-  visibleMarkers: 1
+  visibleMarkers: 0
   markerScale: 0.05
 --- !u!4 &284390531
 Transform:
@@ -786,7 +806,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &358313648
 PrefabInstance:
@@ -868,7 +888,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -972,7 +997,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -1016,11 +1046,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa55f93f2f1a6184eb4f383351bef5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: Put QTM 6DOF object name here
-  PositionOffset: {x: 0, y: 0, z: 0}
+  ObjectName: LeftFoot
+  PositionOffset: {x: -1.5, y: 0, z: 0.43}
   RotationOffset: {x: 0, y: 0, z: 0}
   useObjectOrientation: 1
-  visibleMarkers: 1
+  visibleMarkers: 0
   markerScale: 0.05
 --- !u!4 &415092805
 Transform:
@@ -1034,7 +1064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &429973690 stripped
 Transform:
@@ -1134,7 +1164,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -1267,7 +1302,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -1415,7 +1455,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
@@ -1499,7 +1544,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -1588,7 +1638,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -1677,7 +1732,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -1819,7 +1879,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
@@ -1915,7 +1980,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -2073,7 +2143,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -2162,7 +2237,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -2263,7 +2343,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -2352,7 +2437,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
@@ -2436,7 +2526,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
@@ -2520,7 +2615,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -2648,7 +2748,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
@@ -2732,7 +2837,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -2821,7 +2931,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
@@ -2905,7 +3020,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -2994,7 +3114,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -3083,7 +3208,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -3132,55 +3262,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1848879058}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1967691723
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1967691725}
-  - component: {fileID: 1967691724}
-  m_Layer: 0
-  m_Name: HeadMarkers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1967691724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967691723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa55f93f2f1a6184eb4f383351bef5d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectName: Put QTM 6DOF object name here
-  PositionOffset: {x: 0, y: 0, z: 0}
-  RotationOffset: {x: 0, y: 0, z: 0}
-  useObjectOrientation: 1
-  visibleMarkers: 1
-  markerScale: 0.05
---- !u!4 &1967691725
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967691723}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1982030139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1689040456923597030, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
@@ -3344,7 +3425,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -3433,7 +3519,12 @@ PrefabInstance:
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: heightFromFloor
-      value: 0.008
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoint
+      value: RightFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -3549,7 +3640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d46d40f5f84f394a9358ce1ad5de5fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: Head_
+  ObjectName: Head
   PositionOffset: {x: -1.5, y: -0.06, z: 0.43}
   RotationOffset: {x: 0, y: 180, z: 0}
 --- !u!114 &7673169569715011673
