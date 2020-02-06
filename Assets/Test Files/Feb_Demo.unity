@@ -366,13 +366,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -394,6 +409,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 653eea34fed6dd34bb092f4a3a566c4c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!4 &192720226 stripped
@@ -481,13 +501,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -509,6 +544,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15db85c68e667974ca278c4217e2c5b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!4 &217790260 stripped
@@ -596,13 +636,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -624,6 +679,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 653eea34fed6dd34bb092f4a3a566c4c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &254688263
@@ -705,19 +765,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bc576fc9fc2ecda46b670412d15380e2, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15db85c68e667974ca278c4217e2c5b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1 &261433796
@@ -789,11 +869,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: RightFoot
-  PositionOffset: {x: -1.5, y: 0, z: 0.43}
+  PositionOffset: {x: -1.5, y: -0.005, z: 0.43}
   RotationOffset: {x: 0, y: 0, z: 0}
   useObjectOrientation: 1
   visibleMarkers: 0
-  markerScale: 0.05
+  markerScale: 0.045
 --- !u!4 &284390531
 Transform:
   m_ObjectHideFlags: 0
@@ -887,13 +967,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -915,6 +1010,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15db85c68e667974ca278c4217e2c5b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &387318527
@@ -996,19 +1096,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 773038faa9c6bff4991ea363285dff5a, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 653eea34fed6dd34bb092f4a3a566c4c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!4 &398190741 stripped
@@ -1047,11 +1167,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: LeftFoot
-  PositionOffset: {x: -1.5, y: 0, z: 0.43}
+  PositionOffset: {x: -1.5, y: -0.005, z: 0.43}
   RotationOffset: {x: 0, y: 0, z: 0}
   useObjectOrientation: 1
   visibleMarkers: 0
-  markerScale: 0.05
+  markerScale: 0.045
 --- !u!4 &415092805
 Transform:
   m_ObjectHideFlags: 0
@@ -1163,13 +1283,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -1186,6 +1321,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a109d2409d15d14c9eacbdbebd3a76c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!4 &490306917 stripped
@@ -1194,28 +1334,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 756876605}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &507065095 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1596864304886432, guid: 4dda0e52b0aba794c8c35164557249ab,
-    type: 3}
-  m_PrefabInstance: {fileID: 2076590924}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &507065096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507065095}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 227461547, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 0}
-  showGUI: 1
-  offsetX: 0
-  offsetY: 300
 --- !u!4 &531473139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1689040456923597030, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
@@ -1301,13 +1419,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -1329,6 +1462,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15db85c68e667974ca278c4217e2c5b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1 &648422863
@@ -1454,14 +1592,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a109d2409d15d14c9eacbdbebd3a76c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &736743919
@@ -1543,19 +1701,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bc576fc9fc2ecda46b670412d15380e2, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15db85c68e667974ca278c4217e2c5b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &756876605
@@ -1637,19 +1815,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 773038faa9c6bff4991ea363285dff5a, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 653eea34fed6dd34bb092f4a3a566c4c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &759317441
@@ -1731,19 +1929,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bc576fc9fc2ecda46b670412d15380e2, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15db85c68e667974ca278c4217e2c5b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!4 &843170156 stripped
@@ -1878,14 +2096,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a109d2409d15d14c9eacbdbebd3a76c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!4 &1105846489 stripped
@@ -1979,19 +2217,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 773038faa9c6bff4991ea363285dff5a, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 653eea34fed6dd34bb092f4a3a566c4c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1 &1174187706
@@ -2142,19 +2400,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 773038faa9c6bff4991ea363285dff5a, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 653eea34fed6dd34bb092f4a3a566c4c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &1354217768
@@ -2236,19 +2514,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bc576fc9fc2ecda46b670412d15380e2, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15db85c68e667974ca278c4217e2c5b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!4 &1365973534 stripped
@@ -2342,19 +2640,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 773038faa9c6bff4991ea363285dff5a, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 653eea34fed6dd34bb092f4a3a566c4c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &1423930595
@@ -2436,14 +2754,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a109d2409d15d14c9eacbdbebd3a76c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &1453031721
@@ -2525,14 +2863,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a109d2409d15d14c9eacbdbebd3a76c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &1461320811
@@ -2614,13 +2972,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -2642,6 +3015,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15db85c68e667974ca278c4217e2c5b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!4 &1475060944 stripped
@@ -2747,14 +3125,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a109d2409d15d14c9eacbdbebd3a76c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &1630839207
@@ -2836,19 +3234,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 773038faa9c6bff4991ea363285dff5a, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 653eea34fed6dd34bb092f4a3a566c4c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &1691814616
@@ -2930,14 +3348,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a109d2409d15d14c9eacbdbebd3a76c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &1699538521
@@ -3019,19 +3457,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 773038faa9c6bff4991ea363285dff5a, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 653eea34fed6dd34bb092f4a3a566c4c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &1709616482
@@ -3113,19 +3571,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bc576fc9fc2ecda46b670412d15380e2, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15db85c68e667974ca278c4217e2c5b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &1848879058
@@ -3207,13 +3685,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -3230,6 +3723,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a109d2409d15d14c9eacbdbebd3a76c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!4 &1890929451 stripped
@@ -3424,19 +3922,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bc576fc9fc2ecda46b670412d15380e2, type: 2}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15db85c68e667974ca278c4217e2c5b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!1001 &2141092952
@@ -3518,13 +4036,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
+      propertyPath: targetJoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
       propertyPath: heightFromFloor
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
       propertyPath: targetJoint
       value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[0]
+      value: RightFoot - 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597033, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: targetJoints.Array.data[1]
+      value: LeftFoot - 3
       objectReference: {fileID: 0}
     - target: {fileID: 1689040456923597032, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
         type: 3}
@@ -3546,6 +4079,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1689040456923597028, guid: dedbb8bd75784994bb9a0ad7b8f0c53a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15db85c68e667974ca278c4217e2c5b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dedbb8bd75784994bb9a0ad7b8f0c53a, type: 3}
 --- !u!4 &7667474260909650663
@@ -3635,14 +4173,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7673169569715011671}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d46d40f5f84f394a9358ce1ad5de5fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: Head
   PositionOffset: {x: -1.5, y: -0.06, z: 0.43}
-  RotationOffset: {x: 0, y: 180, z: 0}
+  RotationOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &7673169569715011673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3664,16 +4202,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7673169569715011671}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa55f93f2f1a6184eb4f383351bef5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: Head_
-  PositionOffset: {x: -1.5, y: -0.06, z: 0.43}
-  RotationOffset: {x: 0, y: 180, z: 0}
+  ObjectName: Head
+  PositionOffset: {x: -1.5, y: -1.149, z: 0.43}
+  RotationOffset: {x: 0, y: 0, z: 0}
   useObjectOrientation: 1
-  visibleMarkers: 1
+  visibleMarkers: 0
   markerScale: 0.05
 --- !u!1 &7673208015517689827
 GameObject:

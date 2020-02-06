@@ -7,7 +7,7 @@ public class GetHitByJoint : MonoBehaviour
     [Tooltip("Distance from floor to relevant joint when grounded in meters. ie, distance from marker over foot to floor. Defualt: height for SR_LToeTip to barely hit.")]
     public float heightFromFloor = 0.013f;
     [Tooltip("Joint name we are looking for the target (self) to collide with. Default: joint name from backflip demo.")]
-    public string targetJoint = "SR_LToeTip";
+    public List<string> targetJoints;
 
 
     private AudioSource audioFeedbackSource;
@@ -23,7 +23,16 @@ public class GetHitByJoint : MonoBehaviour
         // grab time of event asap
         string timeString = System.DateTime.Now.ToString("hh.mm.ss.ffffff");
         // disregard when not the name we're looking for
-        if (!string.Equals(other.gameObject.name, targetJoint)) return;
+        bool validTarget = false;
+        foreach(string os in targetJoints) {
+            if (string.Equals(other.gameObject.name, os)) {
+                validTarget = true;
+                break;
+            }
+        }
+
+        if (!validTarget) return;
+
         // play sound as soon as verified
         audioFeedbackSource.Play();
         // calculate distance from center of target object to center of colliding joint
