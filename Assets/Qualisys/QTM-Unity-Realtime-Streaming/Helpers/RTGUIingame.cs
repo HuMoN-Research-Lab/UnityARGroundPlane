@@ -1,6 +1,7 @@
 ﻿// Unity SDK for Qualisys Track Manager. Copyright 2015-2018 Qualisys AB
 //
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using QTMRealTimeSDK;
 using System.Collections.Generic;
@@ -113,6 +114,7 @@ namespace QualisysRealTime.Unity
 
         void Update() {
             if (Input.GetKeyDown(KeyCode.C)) OnConnect();
+            if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
