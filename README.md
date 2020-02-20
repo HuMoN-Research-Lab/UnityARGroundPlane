@@ -27,6 +27,8 @@ This system will be used to study foot hold targetting during locomotion and oth
 - Optionally, add an unlabeled marker number to "Wand" for basic interactivity
 - Build the project with the demo_target_cave scene
 - Run the program, setting the computer monitor as the target display (the UniCAVE plugin will handle setting up the other screens)
+- Click "Connect" or push C to connect this Unity application to QTM
+- R will reload the scene
 
 ---
 
