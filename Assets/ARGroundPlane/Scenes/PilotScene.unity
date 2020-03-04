@@ -163,7 +163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &86302499
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -564,11 +564,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: RightFoot_
-  PositionOffset: {x: -1.5, y: 0, z: 0.43}
+  PositionOffset: {x: -1.475, y: 0, z: 0.465}
   RotationOffset: {x: 0, y: 0, z: 0}
   useObjectOrientation: 1
   visibleMarkers: 0
-  markerScale: 0.073
+  markerScale: 0.06
+  markerGOs: []
 --- !u!1 &866144555
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 866144556}
   - component: {fileID: 866144557}
+  - component: {fileID: 866144558}
   m_Layer: 0
   m_Name: DataOutput
   m_TagString: Untagged
@@ -616,7 +618,19 @@ MonoBehaviour:
   - {fileID: 7673169569715011672}
   - {fileID: 955483000}
   - {fileID: 519982456}
-  TargetSpawn: {fileID: 116371079}
+  TargetSpawn: {fileID: 116371077}
+--- !u!114 &866144558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866144555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475923ffeb1855544a790ffad2a56d39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &877331918
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,11 +748,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: LeftFoot_
-  PositionOffset: {x: -1.5, y: 0, z: 0.43}
+  PositionOffset: {x: -1.475, y: 0, z: 0.465}
   RotationOffset: {x: 0, y: 0, z: 0}
   useObjectOrientation: 1
   visibleMarkers: 0
-  markerScale: 0.05
+  markerScale: 0.06
+  markerGOs: []
 --- !u!1 &1174187706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,7 +1082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2092704222
 Transform:
   m_ObjectHideFlags: 0
@@ -1077,7 +1092,7 @@ Transform:
   m_GameObject: {fileID: 2092704221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.003, y: 0.003, z: 0.003}
+  m_LocalScale: {x: 0.008, y: 0.008, z: 0.008}
   m_Children: []
   m_Father: {fileID: 41933411}
   m_RootOrder: 1
@@ -1350,12 +1365,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa55f93f2f1a6184eb4f383351bef5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: Put QTM 6DOF object name here
-  PositionOffset: {x: -1.5, y: 1.151, z: 0.43}
+  ObjectName: Head_
+  PositionOffset: {x: -1.475, y: 1.151, z: 0.465}
   RotationOffset: {x: 0, y: -90, z: 0}
   useObjectOrientation: 1
   visibleMarkers: 0
   markerScale: 0.05
+  markerGOs: []
 --- !u!1 &7673208015517689827
 GameObject:
   m_ObjectHideFlags: 0

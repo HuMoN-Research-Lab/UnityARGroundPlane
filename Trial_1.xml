@@ -1,0 +1,1827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trial>
+	<Targets>
+		<Target>
+			<Position>(4.8, 0.0, -0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(-0.7, 0.0, 0.1)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.5, 0.0, 0.5)</Position>
+		</Target>
+		<Target>
+			<Position>(3.8, 0.0, -0.9)</Position>
+		</Target>
+		<Target>
+			<Position>(2.2, 0.0, -0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(3.2, 0.0, -0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(4.9, 0.0, -0.4)</Position>
+		</Target>
+		<Target>
+			<Position>(0.0, 0.0, 0.8)</Position>
+		</Target>
+		<Target>
+			<Position>(4.4, 0.0, -0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(1.7, 0.0, 0.0)</Position>
+		</Target>
+		<Target>
+			<Position>(0.5, 0.0, 0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.0, 0.0, -0.1)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.2, 0.0, 0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.2, 0.0, 0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(2.7, 0.0, -0.4)</Position>
+		</Target>
+		<Target>
+			<Position>(1.6, 0.0, 0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(2.4, 0.0, 0.9)</Position>
+		</Target>
+		<Target>
+			<Position>(2.9, 0.0, 0.1)</Position>
+		</Target>
+		<Target>
+			<Position>(-0.5, 0.0, 0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(2.6, 0.0, -0.9)</Position>
+		</Target>
+		<Target>
+			<Position>(-0.3, 0.0, 0.9)</Position>
+		</Target>
+		<Target>
+			<Position>(4.8, 0.0, -0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(2.6, 0.0, 0.1)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.6, 0.0, 0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(3.4, 0.0, 0.9)</Position>
+		</Target>
+		<Target>
+			<Position>(5.1, 0.0, 0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(1.9, 0.0, -0.8)</Position>
+		</Target>
+		<Target>
+			<Position>(3.8, 0.0, -0.2)</Position>
+		</Target>
+		<Target>
+			<Position>(4.3, 0.0, 0.2)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.4, 0.0, 0.2)</Position>
+		</Target>
+		<Target>
+			<Position>(3.2, 0.0, 0.0)</Position>
+		</Target>
+		<Target>
+			<Position>(0.0, 0.0, -0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(1.7, 0.0, 0.2)</Position>
+		</Target>
+		<Target>
+			<Position>(1.4, 0.0, -0.5)</Position>
+		</Target>
+		<Target>
+			<Position>(3.5, 0.0, -0.7)</Position>
+		</Target>
+		<Target>
+			<Position>(4.7, 0.0, 0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(0.1, 0.0, 0.1)</Position>
+		</Target>
+		<Target>
+			<Position>(2.1, 0.0, 0.2)</Position>
+		</Target>
+		<Target>
+			<Position>(1.7, 0.0, -0.8)</Position>
+		</Target>
+		<Target>
+			<Position>(4.5, 0.0, -0.4)</Position>
+		</Target>
+		<Target>
+			<Position>(0.9, 0.0, -0.1)</Position>
+		</Target>
+		<Target>
+			<Position>(0.7, 0.0, -0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(2.9, 0.0, 0.8)</Position>
+		</Target>
+		<Target>
+			<Position>(0.8, 0.0, 0.9)</Position>
+		</Target>
+		<Target>
+			<Position>(3.9, 0.0, -0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.3, 0.0, 0.2)</Position>
+		</Target>
+		<Target>
+			<Position>(1.3, 0.0, 0.7)</Position>
+		</Target>
+		<Target>
+			<Position>(2.8, 0.0, -0.9)</Position>
+		</Target>
+		<Target>
+			<Position>(4.4, 0.0, 0.2)</Position>
+		</Target>
+		<Target>
+			<Position>(3.3, 0.0, 0.9)</Position>
+		</Target>
+		<Target>
+			<Position>(1.3, 0.0, -0.9)</Position>
+		</Target>
+		<Target>
+			<Position>(4.3, 0.0, 0.8)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.4, 0.0, -0.7)</Position>
+		</Target>
+		<Target>
+			<Position>(3.6, 0.0, 0.8)</Position>
+		</Target>
+		<Target>
+			<Position>(0.1, 0.0, -0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(1.2, 0.0, 0.5)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.0, 0.0, -0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(-0.1, 0.0, 0.8)</Position>
+		</Target>
+		<Target>
+			<Position>(2.0, 0.0, -0.4)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.5, 0.0, -0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.0, 0.0, -0.5)</Position>
+		</Target>
+		<Target>
+			<Position>(3.6, 0.0, 0.2)</Position>
+		</Target>
+		<Target>
+			<Position>(3.0, 0.0, -0.9)</Position>
+		</Target>
+		<Target>
+			<Position>(1.7, 0.0, 0.5)</Position>
+		</Target>
+		<Target>
+			<Position>(0.5, 0.0, 0.2)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.3, 0.0, -0.2)</Position>
+		</Target>
+		<Target>
+			<Position>(4.1, 0.0, -0.2)</Position>
+		</Target>
+		<Target>
+			<Position>(1.8, 0.0, 0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(4.3, 0.0, 0.1)</Position>
+		</Target>
+		<Target>
+			<Position>(-0.6, 0.0, 0.5)</Position>
+		</Target>
+		<Target>
+			<Position>(5.0, 0.0, -0.4)</Position>
+		</Target>
+		<Target>
+			<Position>(-0.6, 0.0, -0.7)</Position>
+		</Target>
+		<Target>
+			<Position>(0.1, 0.0, 0.8)</Position>
+		</Target>
+		<Target>
+			<Position>(5.0, 0.0, -0.7)</Position>
+		</Target>
+		<Target>
+			<Position>(3.4, 0.0, -0.5)</Position>
+		</Target>
+		<Target>
+			<Position>(5.3, 0.0, -0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(4.0, 0.0, 0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(4.5, 0.0, 0.2)</Position>
+		</Target>
+		<Target>
+			<Position>(3.8, 0.0, 0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(3.3, 0.0, -0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(3.3, 0.0, 0.5)</Position>
+		</Target>
+		<Target>
+			<Position>(3.7, 0.0, 0.4)</Position>
+		</Target>
+		<Target>
+			<Position>(4.7, 0.0, 0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(3.1, 0.0, -0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(2.8, 0.0, -0.4)</Position>
+		</Target>
+		<Target>
+			<Position>(3.5, 0.0, 0.1)</Position>
+		</Target>
+		<Target>
+			<Position>(1.6, 0.0, -0.4)</Position>
+		</Target>
+		<Target>
+			<Position>(4.7, 0.0, 0.5)</Position>
+		</Target>
+		<Target>
+			<Position>(4.4, 0.0, -0.6)</Position>
+		</Target>
+		<Target>
+			<Position>(0.8, 0.0, 0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(3.2, 0.0, -0.9)</Position>
+		</Target>
+		<Target>
+			<Position>(-0.3, 0.0, -0.4)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.7, 0.0, 0.4)</Position>
+		</Target>
+		<Target>
+			<Position>(0.1, 0.0, 0.1)</Position>
+		</Target>
+		<Target>
+			<Position>(2.1, 0.0, -0.8)</Position>
+		</Target>
+		<Target>
+			<Position>(5.3, 0.0, -0.3)</Position>
+		</Target>
+		<Target>
+			<Position>(1.5, 0.0, 0.8)</Position>
+		</Target>
+		<Target>
+			<Position>(2.2, 0.0, 0.5)</Position>
+		</Target>
+		<Target>
+			<Position>(4.0, 0.0, -0.1)</Position>
+		</Target>
+		<Target>
+			<Position>(-1.3, 0.0, -0.5)</Position>
+		</Target>
+	</Targets>
+	<Frames>
+		<Frame time-passed="323.9362">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="323.9362">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="323.9562">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="323.975">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="323.9911">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.0077">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.0249">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.0415">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.058">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.0743">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.091">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.1077">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.1244">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.1413">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.1579">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.1745">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.1914">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.2081">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.2242">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.2413">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.2579">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.2743">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.2914">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.3086">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.3244">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.3414">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.3584">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.3744">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.3916">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.4087">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.4247">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.4418">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.4583">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.4747">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.4915">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.5078">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.5247">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.5414">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.5579">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.5749">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.5921">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.6083">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.6248">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.6421">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.6583">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.675">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.6919">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.7087">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.7251">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.7419">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.7585">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.7751">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.7914">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.809">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.8255">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.8426">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.8589">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.8751">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.8921">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.9082">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.925">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.9419">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.9587">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.9747">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="324.9914">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="325.0081">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="325.025">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="325.042">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="325.0585">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="325.0749">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="325.0914">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="325.1085">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="325.1249">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="325.1417">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="325.1587">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+		<Frame time-passed="325.1748">
+			<Bodies>
+				<Body name="Head">
+					<Position>(-1.5, 2.3, 0.5)</Position>
+					<Rotation>(0.0, -0.7, 0.0, 0.7)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="LeftFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+				<Body name="RightFoot">
+					<Position>(-1.5, 0.0, 0.5)</Position>
+					<Rotation>(0.0, 0.0, 0.0, 1.0)</Rotation>
+					<Markers />
+				</Body>
+			</Bodies>
+			<ActiveTargets />
+		</Frame>
+	</Frames>
+</Trial>

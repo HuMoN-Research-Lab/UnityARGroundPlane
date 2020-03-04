@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Xml;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using QualisysRealTime.Unity;
 
 public class GenerateOutput : MonoBehaviour
@@ -10,30 +12,53 @@ public class GenerateOutput : MonoBehaviour
     private List<RTObject> Trackers;
 
     [SerializeField]
-    private TargetSpawnArea TargetSpawn;
+    private GameObject TargetSpawn;
 
     private static int TrialCount;
-    private static XmlWriterSettings XmlSettings;
+    private XmlWriterSettings XmlSettings;
 
     private XmlWriter DocWriter;
 
     private string SessionFolder;
 
     void Start() {
+    //     // add scene exit functionality
+    //     SceneManager.sceneUnloaded += EndOfTrial;
+
+    //     // specify output folder
+    //     SessionFolder = System.DateTime.Now.ToString("hh.mm.ss.ffffff");
+         TrialCount = 0;
+        SceneManager.sceneLoaded += FindTargetSpawner;
+    //     XmlSettings = new XmlWriterSettings();
+    //     XmlSettings.Indent = true;
+    //     XmlSettings.IndentChars = "\t";
+    //     XmlSettings.ConformanceLevel = ConformanceLevel.Document;
+    //     XmlSettings.CheckCharacters = true;
+    }
+
+    void FindTargetSpawner(Scene scene, LoadSceneMode mode) {
+        TargetSpawn = GameObject.Find("RandomTargetSpawner");
+    }
+
+    void Awake() {
+        // add scene exit functionality
+        SceneManager.sceneUnloaded += EndOfTrial;
+
         // specify output folder
         SessionFolder = System.DateTime.Now.ToString("hh.mm.ss.ffffff");
-        TrialCount = 1;
+        //TrialCount = 1;
 
         XmlSettings = new XmlWriterSettings();
         XmlSettings.Indent = true;
         XmlSettings.IndentChars = "\t";
         XmlSettings.ConformanceLevel = ConformanceLevel.Document;
         XmlSettings.CheckCharacters = true;
-    }
 
-    void Awake() {
+        Debug.Log("Awake");
+        //TargetSpawn = GameObject.Find("RandomTargetSpawner");
+
         // open file
-        DocWriter = XmlWriter.Create("\\" + SessionFolder + "\\Trial_" + TrialCount + ".xml", XmlSettings);
+        DocWriter = XmlWriter.Create("Trial_" + TrialCount++ + ".xml", XmlSettings);
         // write header
         DocWriter.WriteStartDocument();
         DocWriter.WriteStartElement("Trial");
@@ -53,6 +78,7 @@ public class GenerateOutput : MonoBehaviour
 
     void Update() {
         // open new xml object for this Frame, id it, open a bodies list object
+        if (DocWriter.WriteState == WriteState.Closed || DocWriter.WriteState == WriteState.Error) Awake();
         DocWriter.WriteStartElement("Frame");
         DocWriter.WriteAttributeString("time-passed", Time.time.ToString());
         DocWriter.WriteStartElement("Bodies");
@@ -69,11 +95,10 @@ public class GenerateOutput : MonoBehaviour
                 case QualisysRealTime.Unity.RTObjectMarkers rtMarkers:
                     // go through all children of rtMarkers
                     DocWriter.WriteStartElement("Markers");
-                    Transform[] markerTransforms = rtMarkers.GetComponentsInChildren<Transform>();
-                    foreach (Transform m in markerTransforms) {
+                    foreach (GameObject m in rtMarkers.markerGOs) {
                         DocWriter.WriteStartElement("Marker");
                         DocWriter.WriteAttributeString("name", m.name);
-                        DocWriter.WriteElementString("Position", m.position.ToString());
+                        DocWriter.WriteElementString("Position", m.transform.position.ToString());
                     }
                     // close <Markers>
                     DocWriter.WriteEndElement();
@@ -105,10 +130,8 @@ public class GenerateOutput : MonoBehaviour
         // incorporate target collisions between frames? ASAP? 
     }
 
-    void OnDestroy() {
+    void EndOfTrial<Scene>(Scene s) {
         // close "Frames"
-        DocWriter.WriteEndElement();
-        // close "Trial"
         DocWriter.WriteEndElement();
         // close document
         DocWriter.WriteEndDocument();
