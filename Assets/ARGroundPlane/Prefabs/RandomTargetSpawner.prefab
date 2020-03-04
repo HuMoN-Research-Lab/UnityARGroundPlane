@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5005572995704388376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5005572995704388379}
+  - component: {fileID: 5005572995704388375}
+  - component: {fileID: 5005572995704388373}
+  - component: {fileID: 5005572995704388378}
+  m_Layer: 0
+  m_Name: RandomTargetSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5005572995704388379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5005572995704388376}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.814, y: -0.001, z: -0.01}
+  m_LocalScale: {x: 6.997655, y: 0.005, z: 1.9274374}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5005572995704388375
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5005572995704388376}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &5005572995704388373
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5005572995704388376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &5005572995704388378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5005572995704388376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d840e7e548689e74e85cd148aaaf6791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Floor: {fileID: 0}
+  FloorColor: {r: 1, g: 1, b: 1, a: 1}
+  NumTargetsToSpawn: 100
+  TargetPrefab: {fileID: 1689040456923597035, guid: f72ac4d26a9c9074491bf2a8df0a2f11,
+    type: 3}
+  TargetWidth: 0.1
+  HitJoints:
+  - LeftToeExample
+  - RightToeExample
+  Colors:
+  - {r: 0.5880569, g: 0.99607843, b: 0.20392153, a: 1}
+  - {r: 0.69053423, g: 0.007843143, b: 0.96862745, a: 1}
+  - {r: 1, g: 0.34285688, b: 0.28773582, a: 1}
+  Sounds:
+  - {fileID: 8300000, guid: d3dfdc4ed00e1e04996f8e6a09fafb07, type: 3}
+  - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
+  - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}

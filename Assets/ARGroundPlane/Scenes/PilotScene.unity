@@ -612,6 +612,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 553cd62364d8c6d4d9ad514a20efbdd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Trackers:
+  - {fileID: 7673169569715011672}
+  - {fileID: 955483000}
+  - {fileID: 519982456}
+  TargetSpawn: {fileID: 116371079}
 --- !u!1 &877331918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,12 +1347,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7673169569715011671}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d46d40f5f84f394a9358ce1ad5de5fd, type: 3}
+  m_Script: {fileID: 11500000, guid: aa55f93f2f1a6184eb4f383351bef5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: Head_
-  PositionOffset: {x: -1.5, y: -1.151, z: 0.43}
+  ObjectName: Put QTM 6DOF object name here
+  PositionOffset: {x: -1.5, y: 1.151, z: 0.43}
   RotationOffset: {x: 0, y: -90, z: 0}
+  useObjectOrientation: 1
+  visibleMarkers: 0
+  markerScale: 0.05
 --- !u!1 &7673208015517689827
 GameObject:
   m_ObjectHideFlags: 0
