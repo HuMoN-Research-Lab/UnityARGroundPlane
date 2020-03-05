@@ -30,7 +30,8 @@ namespace QualisysRealTime.Unity
         }
 
         protected List<LabeledMarker> markers;
-        public List<GameObject> markerGOs;
+        [NonSerialized]
+        protected List<GameObject> markerGOs;
 
         private Vector3 bodyPosition = Vector3.zero;
         private Quaternion bodyRotation = Quaternion.identity;
@@ -98,6 +99,7 @@ namespace QualisysRealTime.Unity
             markers = rtClient.Markers;
             foreach (LabeledMarker marker in markers)
             {
+                //Debug.Log(marker.Name);
                 if (marker.Name.StartsWith(this.ObjectName, StringComparison.CurrentCultureIgnoreCase))
                 {
                     GameObject markerGO = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -109,6 +111,10 @@ namespace QualisysRealTime.Unity
                     markerGOs.Add(markerGO);
                 }
             }
+        }
+
+        public List<GameObject> GetMarkerGOs() {
+            return this.markerGOs;
         }
     }
 }

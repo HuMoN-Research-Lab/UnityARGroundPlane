@@ -95,7 +95,7 @@ public class GenerateOutput : MonoBehaviour
                 case QualisysRealTime.Unity.RTObjectMarkers rtMarkers:
                     // go through all children of rtMarkers
                     DocWriter.WriteStartElement("Markers");
-                    foreach (GameObject m in rtMarkers.markerGOs) {
+                    foreach (GameObject m in rtMarkers.GetMarkerGOs()) {
                         DocWriter.WriteStartElement("Marker");
                         DocWriter.WriteAttributeString("name", m.name);
                         DocWriter.WriteElementString("Position", m.transform.position.ToString());
