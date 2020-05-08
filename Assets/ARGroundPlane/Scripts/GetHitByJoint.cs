@@ -9,6 +9,8 @@ public class GetHitByJoint : MonoBehaviour
     [Tooltip("Joint name we are looking for the target (self) to collide with. Default: joint name from backflip demo.")]
     public List<string> targetJoints;
 
+    public GameObject floor;
+
 
     private AudioSource audioFeedbackSource;
 
@@ -32,6 +34,8 @@ public class GetHitByJoint : MonoBehaviour
         }
 
         if (!validTarget) return;
+
+        // TODO: tell floor to shut up this hit
 
         // play sound as soon as verified
         audioFeedbackSource.Play();
