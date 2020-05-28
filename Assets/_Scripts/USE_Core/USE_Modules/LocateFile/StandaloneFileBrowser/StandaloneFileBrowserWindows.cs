@@ -9,7 +9,7 @@ using Ookii.Dialogs;
 namespace SFB {
     // For fullscreen support
     // - WindowWrapper class and GetActiveWindow() are required for modal file dialog.
-    // - "PlayerSettings/Visible In Background" should be enabled, otherwise when file dialog opened app window minimizes automatically.
+    // - "PlayerUSESettings/Visible In Background" should be enabled, otherwise when file dialog opened app window minimizes automatically.
 
     public class WindowWrapper : IWin32Window {
         private IntPtr _hwnd;
@@ -125,9 +125,6 @@ namespace SFB {
             var directoryPath = Path.GetFullPath(directory);
             if (!directoryPath.EndsWith("\\")) {
                 directoryPath += "\\";
-            }
-            if (Path.GetPathRoot(directoryPath) == directoryPath) {
-                return directory;
             }
             return Path.GetDirectoryName(directoryPath) + Path.DirectorySeparatorChar;
         }
