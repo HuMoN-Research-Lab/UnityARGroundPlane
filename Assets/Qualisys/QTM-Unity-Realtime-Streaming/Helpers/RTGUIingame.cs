@@ -1,7 +1,6 @@
 ﻿// Unity SDK for Qualisys Track Manager. Copyright 2015-2018 Qualisys AB
 //
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections;
 using QTMRealTimeSDK;
 using System.Collections.Generic;
@@ -21,9 +20,6 @@ namespace QualisysRealTime.Unity
 
         bool connected = false;
 
-        public int offsetX = 10;
-        public int offsetY = 10;
-
         List<DiscoveryResponse> discoveryResponses;
 
         /// This makes sure we only can connect when in playing mode
@@ -41,9 +37,9 @@ namespace QualisysRealTime.Unity
             GUIStyle style = new GUIStyle();
             style.fontStyle = FontStyle.Bold;
             style.normal.textColor = Color.white;
-            GUI.Box(new Rect(10 + offsetX, 20 + offsetY, 220, 155), "Qualisys Realtime Streamer");
+            GUI.Box(new Rect(10, 10, 220, 155), "Qualisys Realtime Streamer");
 
-            GUI.Label(new Rect(20 + offsetX, 50 + offsetY, 200, 40), "QTM Server:\n(switch with arrow keys)");
+            GUI.Label(new Rect(20, 40, 200, 40), "QTM Server:\n(switch with arrow keys)");
 
             if (discoveryResponses == null) discoveryResponses = RTClient.GetInstance().GetServers();
 
@@ -53,7 +49,7 @@ namespace QualisysRealTime.Unity
                 serverSelection.Add(new GUIContent(discoveryResponse.HostName + " (" + discoveryResponse.IpAddress + ":" + discoveryResponse.Port + ") " + discoveryResponse.InfoText));
             }
 
-            GUI.Label(new Rect(20 + offsetX, 85 + offsetY, 200, 40), serverSelection[selectedServer], style);
+            GUI.Label(new Rect(20, 75, 200, 40), serverSelection[selectedServer], style);
 
             if (Input.GetKeyDown(KeyCode.LeftArrow) && !connected)
             {
@@ -75,19 +71,19 @@ namespace QualisysRealTime.Unity
 
             if (connected)
             {
-                if (GUI.Button(new Rect(20 + offsetX, 125 + offsetY, 200, 40), "Disconnect"))
+                if (GUI.Button(new Rect(20, 115, 200, 40), "Disconnect"))
                 {
                     OnDisconnect();
                 }
             }
             else
             {
-                if (GUI.Button(new Rect(20 + offsetX, 125 + offsetY, 200, 40), "Connect"))
+                if (GUI.Button(new Rect(20, 115, 200, 40), "Connect"))
                 {
                     OnConnect();
                 }
             }
-            GUI.Label(new Rect(20 + offsetX, 100 + offsetY, 200, 40), "Status: " + connectionStatus);
+            GUI.Label(new Rect(20, 90, 200, 40), "Status: " + connectionStatus);
         }
 
         void OnDestroy()
@@ -107,17 +103,12 @@ namespace QualisysRealTime.Unity
         void OnConnect()
         {
             if (selectedDiscoveryResponse.HasValue)
-                connected = RTClient.GetInstance().Connect(selectedDiscoveryResponse.Value, portUDP, true, true, true, true, false, true);
+                connected = RTClient.GetInstance().Connect(selectedDiscoveryResponse.Value, portUDP, true, true, false, true, false, true);
 
             if (connected)
                 connectionStatus = "Connected";
             else
                 connectionStatus = "Connection error - check console";
-        }
-
-        void Update() {
-            if (Input.GetKeyDown(KeyCode.C)) OnConnect();
-            if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

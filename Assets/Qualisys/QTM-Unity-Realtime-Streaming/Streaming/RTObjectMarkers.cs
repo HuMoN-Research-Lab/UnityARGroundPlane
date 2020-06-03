@@ -30,7 +30,6 @@ namespace QualisysRealTime.Unity
         }
 
         protected List<LabeledMarker> markers;
-        [NonSerialized]
         protected List<GameObject> markerGOs;
 
         private Vector3 bodyPosition = Vector3.zero;
@@ -99,7 +98,6 @@ namespace QualisysRealTime.Unity
             markers = rtClient.Markers;
             foreach (LabeledMarker marker in markers)
             {
-                //Debug.Log(marker.Name);
                 if (marker.Name.StartsWith(this.ObjectName, StringComparison.CurrentCultureIgnoreCase))
                 {
                     GameObject markerGO = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -107,14 +105,9 @@ namespace QualisysRealTime.Unity
                     markerGO.transform.parent = this.gameObject.transform;
                     markerGO.transform.localScale = Vector3.one * markerScale;
                     markerGO.SetActive(false);
-                    markerGO.GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
                     markerGOs.Add(markerGO);
                 }
             }
-        }
-
-        public List<GameObject> GetMarkerGOs() {
-            return this.markerGOs;
         }
     }
 }
