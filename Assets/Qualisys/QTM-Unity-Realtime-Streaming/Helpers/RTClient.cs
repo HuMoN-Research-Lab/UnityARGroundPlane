@@ -54,13 +54,10 @@ namespace QualisysRealTime.Unity
         {
             mPacket = packet;
 
-            if (mPacket.TimeStamp != -1) {
-                timestamp = mPacket.TimeStamp;
-            }
-
             var bodyData = packet.Get6DOFData();
             if (bodyData != null)
             {
+                timestamp = packet.TimeStamp;
                 for (int i = 0; i < bodyData.Count; i++)
                 {
                     Vector3 position = new Vector3(bodyData[i].Position.X, bodyData[i].Position.Y, bodyData[i].Position.Z);
