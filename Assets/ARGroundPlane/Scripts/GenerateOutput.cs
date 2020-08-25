@@ -45,7 +45,7 @@ public class GenerateOutput : MonoBehaviour
         SceneManager.sceneUnloaded += EndOfTrial;
 
         // specify output folder
-        SessionFolder = System.DateTime.Now.ToString("hh.mm.ss.ffffff");
+        SessionFolder = "Subject1";
         //TrialCount = 1;
 
         XmlSettings = new XmlWriterSettings();
@@ -81,36 +81,38 @@ public class GenerateOutput : MonoBehaviour
         if (DocWriter.WriteState == WriteState.Closed || DocWriter.WriteState == WriteState.Error) Awake();
         DocWriter.WriteStartElement("Frame");
         DocWriter.WriteAttributeString("time-passed", Time.time.ToString());
+        DocWriter.WriteAttributeString("QTM-Time", RTClient.GetInstance().GetTimeStamp().ToString());
         DocWriter.WriteStartElement("Bodies");
 
         foreach(RTObject rto in Trackers) {
             // Stuff for every object
             DocWriter.WriteStartElement("Body");
             DocWriter.WriteAttributeString("name", rto.name);
-            DocWriter.WriteElementString("Position", rto.transform.position.ToString());
-            DocWriter.WriteElementString("Rotation", rto.transform.rotation.ToString());
+            DocWriter.WriteElementString("Position", rto.GetComponentInChildren<Transform>().position.ToString());
+            DocWriter.WriteElementString("Rotation", rto.GetComponentInChildren<Transform>().rotation.eulerAngles.ToString());
             
             // Specific RT data for different types
-            switch (rto) {
-                case QualisysRealTime.Unity.RTObjectMarkers rtMarkers:
-                    // go through all children of rtMarkers
-                    DocWriter.WriteStartElement("Markers");
-                    // foreach (GameObject m in rtMarkers.GetMarkerGOs()) {
-                    //     DocWriter.WriteStartElement("Marker");
-                    //     DocWriter.WriteAttributeString("name", m.name);
-                    //     DocWriter.WriteElementString("Position", m.transform.position.ToString());
-                    // }
-                    // close <Markers>
-                    DocWriter.WriteEndElement();
-                    break;
-                case QualisysRealTime.Unity.RTObject rtObject:
-                    // we only have the end object pos/rot, not each marker
-                    // already taken care of, this space is for further special output if needed
-                    break;
-                default:
-                    // "Customized output functionality has not been specified for object type " + typeof(rto) + " such as " + rto.name
-                    break;
-            }
+            // switch (rto) {
+            //     case QualisysRealTime.Unity.RTObjectMarkers rtMarkers:
+            //         // go through all children of rtMarkers
+            //         //DocWriter.WriteStartElement("Markers");
+            //         foreach (GameObject m in rtMarkers.GetMarkerGOs()) {
+            //             //  DocWriter.WriteStartElement("Marker");
+            //             //  DocWriter.WriteAttributeString("name", m.name);
+            //             //  DocWriter.WriteElementString("Position", m.transform.position.ToString());
+            //             //  DocWriter.WriteEndElement();
+            //          }
+            //         // close <Markers>
+            //         //DocWriter.WriteEndElement();
+            //         break;
+            //     case QualisysRealTime.Unity.RTObject rtObject:
+            //         // we only have the end object pos/rot, not each marker
+            //         // already taken care of, this space is for further special output if needed
+            //         break;
+            //     default:
+            //         // "Customized output functionality has not been specified for object type " + typeof(rto) + " such as " + rto.name
+            //         break;
+            // }
 
             // Close "Body"
             DocWriter.WriteEndElement();

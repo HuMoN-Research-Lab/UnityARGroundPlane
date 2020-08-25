@@ -32,6 +32,10 @@ namespace QualisysRealTime.Unity
         protected List<LabeledMarker> markers;
         protected List<GameObject> markerGOs;
 
+        public List<GameObject> GetMarkerGOs() {
+            return markerGOs;
+        }
+
         private Vector3 bodyPosition = Vector3.zero;
         private Quaternion bodyRotation = Quaternion.identity;
 

@@ -44,6 +44,7 @@ namespace QualisysRealTime.Unity
         private Axis mUpAxis;
         private Quaternion mCoordinateSystemChange;
         private RTPacket mPacket;
+        private long timestamp = -1;
         private bool mStreamingStatus;
 
 
@@ -52,6 +53,10 @@ namespace QualisysRealTime.Unity
         public void Process(RTPacket packet)
         {
             mPacket = packet;
+
+            if (mPacket.TimeStamp != -1) {
+                timestamp = mPacket.TimeStamp;
+            }
 
             var bodyData = packet.Get6DOFData();
             if (bodyData != null)
@@ -202,6 +207,10 @@ namespace QualisysRealTime.Unity
                 mProtocol.GetGeneralSettings();
             }
             return mProtocol.GeneralSettings.CaptureFrequency;
+        }
+
+        public long GetTimeStamp() {
+            return timestamp;
         }
 
         private RTClient()
