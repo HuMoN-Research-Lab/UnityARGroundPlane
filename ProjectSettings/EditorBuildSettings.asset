@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/ARGroundPlane/Scenes/demo_target_cave.unity
     guid: 8459cda503d721d40b049b586917ba8a
-  - enabled: 1
+  - enabled: 0
     path: Assets/XRExperimentStructure/PilotData_08252020/Black Dots AR Ground.unity
     guid: 957f9a84a4406c24caf0953af9dcf1f4
   - enabled: 0
@@ -24,15 +24,18 @@ EditorBuildSettings:
     path: Assets/ARGroundPlane/Scenes/PilotScene.unity
     guid: a35a99915503faf49917f9f80d4171a7
   - enabled: 0
-    path: Assets/OpenSaberVR/_Scenes/PersistentScene.unity
-    guid: 8516373f06b26aa4eb681a94cd49889c
-  - enabled: 0
-    path: Assets/OpenSaberVR/_Scenes/OpenSaber.unity
-    guid: 37aa8d289046f3a48bb02b36f3113d87
-  - enabled: 0
-    path: Assets/OpenSaberVR/_Scenes/Menu.unity
-    guid: 7d962ed6b30fa6e449d3941022c5c89a
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/XRExperimentStructure/Experiment 1/Scenes/Black Dots AR Ground.unity
+    guid: 4a4f1387fcd3b7d4ca6593d7798286ca
   m_configObjects: {}
