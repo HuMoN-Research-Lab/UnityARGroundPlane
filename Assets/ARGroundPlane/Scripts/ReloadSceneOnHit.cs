@@ -7,7 +7,7 @@ using QualisysRealTime.Unity;
 public class ReloadSceneOnHit : MonoBehaviour
 {
     void OnTriggerEnter(Collider other) {
-        if (other == null || other.gameObject.GetComponentInParent<RTObjectMarkers>())
+        if (other == null || other.gameObject.name.Contains("TEST") || other.gameObject.GetComponentInParent<RTObjectMarkers>())
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
