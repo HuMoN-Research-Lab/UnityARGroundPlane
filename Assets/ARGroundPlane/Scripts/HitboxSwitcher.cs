@@ -9,8 +9,8 @@ public class HitboxSwitcher : MonoBehaviour
     public GameObject hbB;
 
     void Awake() {
-        hbA.SetActive(true);
-        hbB.SetActive(false);
+        //hbA.SetActive(true);
+        //hbB.SetActive(false);
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 

@@ -8,6 +8,7 @@ public class ReloadSceneOnHit : MonoBehaviour
 {
     void OnTriggerEnter(Collider other) {
         if (other == null || other.gameObject.name.Contains("TEST") || other.gameObject.GetComponentInParent<RTObjectMarkers>())
+            Reporter.print("Test?");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
