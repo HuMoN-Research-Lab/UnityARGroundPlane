@@ -17,6 +17,11 @@ public class DetectMarker : MonoBehaviour
         r.material.color = c;
     }
 
+    public void SetMaterial(Material c) {
+        Renderer r = GetComponent<Renderer>();
+        r.material = c;
+    }
+
     // TODO: Move hitbox above target?
 
     void Awake() {
