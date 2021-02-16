@@ -5,70 +5,71 @@ using UnityEngine.TestTools;
 using System.Collections.Generic;
 using NUnit.Framework;
 using System.Collections;
+using System.IO;
 
 namespace UXF.Tests
 {
 
-    public class TestFileIOManager
+    public class TestFileSaver
     {
 
-        string path = "example_output/fileiomanager_test";
-		FileIOManager fileIOManager;
-
-        List<WriteFileInfo> writtenFiles;
+        string experiment = "fileSaver_test";
+        string ppid = "test_ppid";
+        int sessionNum = 1;
+		FileSaver fileSaver;
 
         [SetUp]
         public void SetUp()
         {
 			var gameObject = new GameObject();
-			fileIOManager = gameObject.AddComponent<FileIOManager>();
-			fileIOManager.debug = true;
+			fileSaver = gameObject.AddComponent<FileSaver>();
+			fileSaver.verboseDebug = true;
         }
 
 
 		[TearDown]
 		public void TearDown()
 		{			
-			GameObject.DestroyImmediate(fileIOManager.gameObject);
+			GameObject.DestroyImmediate(fileSaver.gameObject);
 		}
 
 
         [Test]
         public void WriteManyFiles()
         {
-            fileIOManager.Begin();
+            fileSaver.storagePath = "example_output";
+            fileSaver.SetUp();
 
             // generate a large dictionary
 			var dict = new Dictionary<string, object>();
 
-            var largeArray = new int[10000];
-			for (int i = 0; i < largeArray.Length; i++)
-                largeArray[i] = i;
+            var largeArray = new string[100];
+            string largeString = new string('*', 50000);
 
-			dict["large_array"] = largeArray;
-
-            
-            if (!System.IO.Directory.Exists(path))
-                System.IO.Directory.CreateDirectory(path);
-
-
-			// write lots of JSON files
+			// write lots and lots of JSON files
 			int n = 100;
+            string[] fpaths = new string[n];
 			for (int i = 0; i < n; i++)
 			{
-				string fileName = string.Format("{0:000}.json", i);
-                WriteFileInfo fileInfo = new WriteFileInfo(WriteFileType.Test, path, fileName);
+				string fileName = string.Format("{0}", i);
 				Debug.LogFormat("Queueing {0}", fileName);
-            	fileIOManager.ManageInWorker(() => fileIOManager.WriteJson(dict, fileInfo));
+            	string fpath = fileSaver.HandleText(largeString, experiment, ppid, sessionNum, fileName, UXFDataType.OtherSessionData);
+                fpaths[i] = fpath;
 			}
 
-            fileIOManager.End();
+            Debug.Log("###########################################");
+            Debug.Log("############## CLEANING UP ################");
+            Debug.Log("###########################################");
+            fileSaver.CleanUp();
+
+            Assert.Throws<System.InvalidOperationException>(() => {
+                fileSaver.HandleText(largeString, experiment, ppid, sessionNum, "0", UXFDataType.OtherSessionData);
+            });
 
 			// cleanup files
-            var files = System.IO.Directory.GetFiles(path, "*.json");
-            foreach (var file in files)
+            foreach (var fpath in fpaths)
             {
-                System.IO.File.Delete(file);
+                System.IO.File.Delete(Path.Combine(fileSaver.storagePath, fpath));
             }
         }
 
@@ -76,65 +77,57 @@ namespace UXF.Tests
         [Test]
         public void EarlyExit()
         {
-            fileIOManager.Begin();
-            fileIOManager.End();
+            fileSaver.storagePath = "example_output";
+            fileSaver.SetUp();
+            fileSaver.CleanUp();
 			
 			Assert.Throws<System.InvalidOperationException>(
 				() => {
-                    fileIOManager.ManageInWorker(() => Debug.Log("Code enqueued after FileIOManager ended"));
+                    fileSaver.ManageInWorker(() => Debug.Log("Code enqueued after FileSaver ended"));
 				}
 			);
 
-            fileIOManager.Begin();
-            fileIOManager.ManageInWorker(() => Debug.Log("Code enqueued after FileIOManager re-opened"));
-            fileIOManager.End();
-
+            fileSaver.SetUp();
+            fileSaver.ManageInWorker(() => Debug.Log("Code enqueued after FileSaver re-opened"));
+            fileSaver.CleanUp();
         }
 
         [Test]
-        public void WriteFileEventTest()
+        public void AbsolutePath()
         {
-            writtenFiles = new List<WriteFileInfo>();
-            fileIOManager.onWriteFile.AddListener(new UnityAction<WriteFileInfo>(DoSomethingWithFile));
-            fileIOManager.Begin();
+            fileSaver.storagePath = "C:/example_output";
+            fileSaver.SetUp();
+            
+            string outString = fileSaver.HandleText("abc", experiment, ppid, sessionNum, "test", UXFDataType.OtherSessionData);
 
-            // generate a dictionary
-            var dict = new Dictionary<string, object>();
+            Assert.AreEqual(outString, @"fileSaver_test/test_ppid/S001/othersessiondata/test.txt");
 
-            var intArray = new int[10];
-            for (int i = 0; i < intArray.Length; i++)
-                intArray[i] = i;
-            dict["int_array"] = intArray;
-
-            // write lots of JSON files
-            int n = 100;
-            WriteFileInfo[] fileInfos = new WriteFileInfo[n];
-            for (int i = 0; i < n; i++)
-            {
-                string fileName = string.Format("{0:000}.json", i);
-                WriteFileInfo fileInfo = new WriteFileInfo(WriteFileType.Test, path, fileName);
-                fileInfos[i] = fileInfo;
-                Debug.LogFormat("Queueing {0}", fileName);
-                fileIOManager.ManageInWorker(() => fileIOManager.WriteJson(dict, fileInfo));
-            }
-
-            // end and join
-            fileIOManager.End();
-
-            // now check each file was passed to the event (i.e. added to the written files list)
-            for (int i = 0; i < n; i++)
-            {
-                Assert.AreEqual(fileInfos[i], writtenFiles[i]);
-            }
-
-            writtenFiles.Clear();
+            fileSaver.CleanUp();
         }
 
-        void DoSomethingWithFile(WriteFileInfo writeFileInfo)
+        [Test]
+        public void FileSaverRelPath()
         {
-            Debug.LogFormat("Received {0} file: {1}", writeFileInfo.fileType, writeFileInfo.paths[writeFileInfo.paths.Length-1]);
-            System.Threading.Thread.Sleep(100); // sleep here to force producer loop to end early
-            writtenFiles.Add(writeFileInfo);
+
+            Assert.AreEqual(
+                FileSaver.GetRelativePath("C:\\base", "C:\\base\\123"),
+                "123"
+            );
+
+            Assert.AreEqual(
+                FileSaver.GetRelativePath("base", "base\\123"),
+                "123"
+            );
+
+            Assert.AreEqual(
+                FileSaver.GetRelativePath("base/", "base\\123"),
+                "123"
+            );
+
+            Assert.AreEqual(
+                FileSaver.GetRelativePath("C:/base/", "C:/base\\123"),
+                "123"
+            );
         }
 
     }

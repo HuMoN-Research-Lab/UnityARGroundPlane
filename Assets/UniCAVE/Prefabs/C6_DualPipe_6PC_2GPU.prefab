@@ -189,7 +189,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292518801803732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_SceneId:
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292518801803732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 13d6c522af31447398568cc65334232b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 1
@@ -573,7 +573,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1505384571714756}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_SceneId:
@@ -671,7 +671,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1526182963637040}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -822479833, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 10c2fd873b12541b392f10ecc4846574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_NetworkPort: 7777
@@ -879,6 +879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bbb13f3601696f429cf6980abfdb409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camPrefab: {fileID: 0}
   leftEyeOffset: {x: -0.031, y: 0.0266, z: 0.041}
   rightEyeOffset: {x: 0.031, y: 0.0266, z: 0.041}
   nearClippingPlane: 0.01
@@ -892,7 +893,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1595881864927760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_SceneId:
@@ -981,7 +982,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1609654477884330}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_SceneId:
@@ -1018,24 +1019,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   head: {fileID: 114822191924991442}
-  launchScript: "# Windows Powershell Launch Script\n# Script Generated On Tuesday,
-    December 25, 2018, 10:55:14 PM\n# Setup contains 7 displays and 0 display managers\n\n#
-    Display: +Z\nIf ($env:ComputerName -eq \"C6_V1_FRONTRIGH\") {\n\tUniCAVE2018.exe
-    -screen-fullscreen 0 -popupwindow  eye left\n\tUniCAVE2018.exe -screen-fullscreen
-    0 -popupwindow  eye right\n}\n\n# Display: -Z\nIf ($env:ComputerName -eq \"C6_V1_DOORLEFT\")
-    {\n\tUniCAVE2018.exe -screen-fullscreen 0 -popupwindow  eye left\n\tUniCAVE2018.exe
-    -screen-fullscreen 0 -popupwindow  eye right\n}\n\n# Display: +X\nIf ($env:ComputerName
-    -eq \"C6_V2_FRONTRIGH\") {\n\tUniCAVE2018.exe -screen-fullscreen 0 -popupwindow
-    \ eye left\n\tUniCAVE2018.exe -screen-fullscreen 0 -popupwindow  eye right\n}\n\n#
-    Display: -X\nIf ($env:ComputerName -eq \"C6_V2_DOORLEFT\") {\n\tUniCAVE2018.exe
-    -screen-fullscreen 0 -popupwindow  eye left\n\tUniCAVE2018.exe -screen-fullscreen
-    0 -popupwindow  eye right\n}\n\n# Display: +Y\nIf ($env:ComputerName -eq \"C6_V2_FLOORCEIL\")
-    {\n\tUniCAVE2018.exe -screen-fullscreen 0 -popupwindow  eye left\n\tUniCAVE2018.exe
-    -screen-fullscreen 0 -popupwindow  eye right\n}\n\n# Display: -Y\nIf ($env:ComputerName
-    -eq \"C6_V1_FLOORCEIL\") {\n\tUniCAVE2018.exe -screen-fullscreen 0 -popupwindow
-    \ eye left\n\tUniCAVE2018.exe -screen-fullscreen 0 -popupwindow  eye right\n}\n\n#
-    Display: Head Display\nIf ($env:ComputerName -eq \"C6_V1_HEAD\") {\n\tUniCAVE2018.exe
-    -screen-fullscreen 0 -popupwindow \n}"
   settingsToLoad: 
 --- !u!1 &1659831128677400
 GameObject:

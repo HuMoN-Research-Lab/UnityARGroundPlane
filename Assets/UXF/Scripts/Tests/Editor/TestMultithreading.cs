@@ -15,35 +15,33 @@ namespace UXF.Tests
 
         GameObject gameObject;
         Session session;
-        FileIOManager fileIOManager;
+        FileSaver fileSaver;
         SessionLogger sessionLogger;
 
         [SetUp]
         public void SetUp()
         {
             gameObject = new GameObject();
-            fileIOManager = gameObject.AddComponent<FileIOManager>();
+            fileSaver = gameObject.AddComponent<FileSaver>();
             sessionLogger = gameObject.AddComponent<SessionLogger>();
             session = gameObject.AddComponent<Session>();
 
-            session.AttachReferences(
-                fileIOManager
-            );
-
             sessionLogger.AttachReferences(
-                fileIOManager,
                 session
             );
 
+            fileSaver.storagePath = "example_output";
+
+            session.dataHandlers = new DataHandler[]{ fileSaver };
+
             sessionLogger.Initialise();
 
-            fileIOManager.debug = true;
+            fileSaver.verboseDebug = true;
         }
 
         [TearDown]
         public void TearDown()
         {
-            fileIOManager.End();
             GameObject.DestroyImmediate(gameObject);
         }
 
@@ -61,7 +59,7 @@ namespace UXF.Tests
                 settings.SetValue(key, i);
             }
 
-            session.Begin(experimentName, ppid, "example_output", settings: settings);
+            session.Begin(experimentName, ppid, settings: settings);
             
             // add lots more during potential writing
             for (int i = 0; i < 10000; i++)

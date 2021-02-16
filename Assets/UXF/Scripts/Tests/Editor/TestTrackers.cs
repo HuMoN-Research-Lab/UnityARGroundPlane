@@ -14,35 +14,32 @@ namespace UXF.Tests
 
         GameObject gameObject;
         Session session;
-        FileIOManager fileIOManager;
+        FileSaver fileSaver;
         SessionLogger sessionLogger;
 		List<GameObject> tracked = new List<GameObject>();
 
-        [SetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
             gameObject = new GameObject();
-            fileIOManager = gameObject.AddComponent<FileIOManager>();
+            fileSaver = gameObject.AddComponent<FileSaver>();
             sessionLogger = gameObject.AddComponent<SessionLogger>();
             session = gameObject.AddComponent<Session>();
 
-            session.AttachReferences(
-                fileIOManager
-            );
-
             sessionLogger.AttachReferences(
-                fileIOManager,
                 session
             );
 
-            sessionLogger.Initialise();
+            session.dataHandlers = new DataHandler[]{ fileSaver };
 
-            fileIOManager.debug = true;
-            fileIOManager.Begin();
+            sessionLogger.Initialise();
+            
+            fileSaver.storagePath = "example_output";
+            fileSaver.verboseDebug = true;
 
             string experimentName = "unit_test";
             string ppid = "test_trackers";
-            session.Begin(experimentName, ppid, "example_output");
+            session.Begin(experimentName, ppid);
 
 
             for (int i = 0; i < 5; i++)
@@ -60,11 +57,11 @@ namespace UXF.Tests
 			session.CreateBlock(10);
         }
 
-        [TearDown]
+        [OneTimeTearDown]
         public void TearDown()
         {
             session.End();
-            fileIOManager.End();
+
             GameObject.DestroyImmediate(gameObject);
 
 			foreach (GameObject trackedObject in tracked)
@@ -106,6 +103,93 @@ namespace UXF.Tests
 
 			}
 
+        }
+
+        [Test]	
+        public void AdHocTrackerAdd()
+        {
+			Random.InitState(2); // reproducible
+
+			foreach (var trial in session.Trials)
+			{
+
+				trial.Begin();
+
+                // on each trial, add another gameobject to be tracked
+                GameObject newGameObject = new GameObject();
+                PositionRotationTracker prt = newGameObject.AddComponent<PositionRotationTracker>();
+                prt.objectName = string.Format("adhoc_obj_trial_{0}", trial.number);
+                
+                session.trackedObjects.Add(prt);
+                prt.StartRecording();
+
+				// record 100 times in each trial
+				for (int i = 0; i < 100; i++)
+				{
+                    foreach (Tracker trackedObject in session.trackedObjects)
+                    {
+                        trackedObject.transform.position = new Vector3
+                        (
+                            Random.value, Random.value, Random.value
+                        );
+
+                        trackedObject.transform.eulerAngles = new Vector3
+                        (
+                            Random.value, Random.value, Random.value
+                        );
+                    
+						trackedObject.GetComponent<PositionRotationTracker>().RecordRow();
+					}
+				}
+
+				trial.End();
+
+                session.trackedObjects.Remove(prt);
+                GameObject.DestroyImmediate(newGameObject);
+
+			}
+
+        }
+
+        [Test]
+        public void RecordingException()
+        {
+            Tracker testTracker = tracked[0].GetComponent<Tracker>();
+
+            Assert.Throws<System.InvalidOperationException>(() => testTracker.RecordRow());
+        }
+
+        [Test]
+        public void DuplicateTrackersCausesError()
+        {
+            string objectName = session.trackedObjects[0].objectName;
+            string measurementDescriptor = session.trackedObjects[0].measurementDescriptor;
+
+            bool errorCaught = false;
+
+            foreach (var trial in session.Trials)
+			{
+                session.trackedObjects[0].objectName = session.trackedObjects[1].objectName;
+                session.trackedObjects[0].measurementDescriptor = session.trackedObjects[1].measurementDescriptor;
+
+				trial.Begin();
+
+                try
+                {
+                    trial.End();
+                }
+                catch (System.InvalidOperationException)
+                {
+                    errorCaught = true;
+                }
+
+                session.trackedObjects[0].objectName = objectName;
+                session.trackedObjects[0].measurementDescriptor = measurementDescriptor;
+
+                trial.End();
+            }
+
+            Assert.That(errorCaught);
         }
 
 	}
