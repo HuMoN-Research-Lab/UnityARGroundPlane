@@ -81,7 +81,7 @@ public class GenerateOutput : MonoBehaviour
         if (DocWriter.WriteState == WriteState.Closed || DocWriter.WriteState == WriteState.Error) Awake();
         DocWriter.WriteStartElement("Frame");
         DocWriter.WriteAttributeString("time-passed", Time.time.ToString());
-        DocWriter.WriteAttributeString("QTM-Time", RTClient.GetInstance().GetTimeStamp().ToString());
+        //DocWriter.WriteAttributeString("QTM-Time", RTClient.GetInstance().GetTimeStamp().ToString());
         DocWriter.WriteStartElement("Bodies");
 
         foreach(RTObject rto in Trackers) {

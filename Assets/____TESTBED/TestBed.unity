@@ -290,20 +290,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 116371077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d840e7e548689e74e85cd148aaaf6791, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b97b8b5f2f9dae44aaa1cdd373838b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Floor: {fileID: 86302500}
-  FloorColor: {r: 1, g: 1, b: 1, a: 1}
-  NumTargetsToSpawn: 100
+  FloorColor: {r: 0.77647066, g: 0.8000001, b: 0.83921576, a: 0}
+  NumTargetsToSpawn: 50
   NumObstaclesToSpawn: 25
   TargetPrefab: {fileID: 1689040456923597035, guid: f72ac4d26a9c9074491bf2a8df0a2f11,
     type: 3}
   TargetWidth: 0.1
   MinDistBetweenObjects: 0.1
   HitJoints:
-  - LToe
-  - RToe
+  - TESTWilson
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -453,7 +452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b93cef6ce5814344855603fe1a8e5ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 200
+  speed: 300
 --- !u!114 &189087453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,7 +482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &192818943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,38 +512,35 @@ MonoBehaviour:
   fps: 0
   fpsText: 
   images:
-    clearImage: {fileID: 2800000, guid: 112c6fcf56e349449ab2e6ad76b67816, type: 3}
-    collapseImage: {fileID: 2800000, guid: 4623f326a884a2546ab39078bf7822c3, type: 3}
-    clearOnNewSceneImage: {fileID: 2800000, guid: 3a6bc61a8319b1949ab9f1f2db1302b4,
-      type: 3}
-    showTimeImage: {fileID: 2800000, guid: 782e03669fa4a614e89ef56252134250, type: 3}
-    showSceneImage: {fileID: 2800000, guid: ff4dfb29f203a174ab8e4c498afe908a, type: 3}
-    userImage: {fileID: 2800000, guid: 2bcdc012e7356f1449ce7d3a31dc458c, type: 3}
-    showMemoryImage: {fileID: 2800000, guid: f447d62f2dacf9843be7cbf168a3a9d0, type: 3}
-    softwareImage: {fileID: 2800000, guid: 6c91fc88ee6c791468318d85febfb48d, type: 3}
-    dateImage: {fileID: 2800000, guid: a7561cd0a9f62a84e99bff1abce2a222, type: 3}
-    showFpsImage: {fileID: 2800000, guid: 90b2f48155dc0e74f8e428561ac79da5, type: 3}
-    infoImage: {fileID: 2800000, guid: 2954bef266e6d794aba08ceacc887a0f, type: 3}
-    saveLogsImage: {fileID: 2800000, guid: 4a4821d80a1fc774fb76eac6213544e7, type: 3}
-    searchImage: {fileID: 2800000, guid: bfef37b5a26d2264798616d960451329, type: 3}
-    copyImage: {fileID: 2800000, guid: 7f36d71624c630046b855909c497be17, type: 3}
-    closeImage: {fileID: 2800000, guid: b65e9be99974bc94eab5d6698811d0b8, type: 3}
-    buildFromImage: {fileID: 2800000, guid: 8702be598dd9f504ca33be2afee2ca33, type: 3}
-    systemInfoImage: {fileID: 2800000, guid: e9011b1dc9256ad4d9c19a31c595f95f, type: 3}
-    graphicsInfoImage: {fileID: 2800000, guid: 999d31716332cc04eb4abc9c9270b0ca, type: 3}
-    backImage: {fileID: 2800000, guid: a0632a18e7c665641b94fea66506ab50, type: 3}
-    logImage: {fileID: 2800000, guid: e876b803a4dd5c5488078071d15aa9c0, type: 3}
-    warningImage: {fileID: 2800000, guid: 1066be8e7b994b94c8a182b8dbe30705, type: 3}
-    errorImage: {fileID: 2800000, guid: 7640ebf8b3a92124d821d3b4b8b3fd7e, type: 3}
-    barImage: {fileID: 2800000, guid: 8128d4f4c0193e34586f9631ef7d4787, type: 3}
-    button_activeImage: {fileID: 2800000, guid: 2580a2e903691e44282e56ed6e0ff37a,
-      type: 3}
-    even_logImage: {fileID: 2800000, guid: d27aad55b568c6544b0b95a95da44bc7, type: 3}
-    odd_logImage: {fileID: 2800000, guid: 8ffbb44a2c3adae45913474e4fd487f5, type: 3}
-    selectedImage: {fileID: 2800000, guid: 17117a429b08e7e43b0b6c8421de69fe, type: 3}
-    reporterScrollerSkin: {fileID: 11400000, guid: 1cc68832d00d3284a9324a4dc05be753,
-      type: 2}
-  size: {x: 40, y: 32}
+    clearImage: {fileID: 0}
+    collapseImage: {fileID: 0}
+    clearOnNewSceneImage: {fileID: 0}
+    showTimeImage: {fileID: 0}
+    showSceneImage: {fileID: 0}
+    userImage: {fileID: 0}
+    showMemoryImage: {fileID: 0}
+    softwareImage: {fileID: 0}
+    dateImage: {fileID: 0}
+    showFpsImage: {fileID: 0}
+    infoImage: {fileID: 0}
+    saveLogsImage: {fileID: 0}
+    searchImage: {fileID: 0}
+    copyImage: {fileID: 0}
+    closeImage: {fileID: 0}
+    buildFromImage: {fileID: 0}
+    systemInfoImage: {fileID: 0}
+    graphicsInfoImage: {fileID: 0}
+    backImage: {fileID: 0}
+    logImage: {fileID: 0}
+    warningImage: {fileID: 0}
+    errorImage: {fileID: 0}
+    barImage: {fileID: 0}
+    button_activeImage: {fileID: 0}
+    even_logImage: {fileID: 0}
+    odd_logImage: {fileID: 0}
+    selectedImage: {fileID: 0}
+    reporterScrollerSkin: {fileID: 0}
+  size: {x: 32, y: 32}
   maxSize: 20
   numOfCircleToShow: 1
   Initialized: 0
@@ -728,12 +724,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa55f93f2f1a6184eb4f383351bef5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: RightFoot_
-  PositionOffset: {x: -1.475, y: 0, z: 0.465}
+  ObjectName: Put QTM 6DOF object name here
+  PositionOffset: {x: 0, y: 0, z: 0}
   RotationOffset: {x: 0, y: 0, z: 0}
   useObjectOrientation: 1
   visibleMarkers: 1
-  markerScale: 0.097
+  markerScale: 0.05
 --- !u!1 &866144555
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,11 +774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 553cd62364d8c6d4d9ad514a20efbdd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trackers:
-  - {fileID: 7673169569715011672}
-  - {fileID: 955483000}
-  - {fileID: 519982456}
-  TargetSpawn: {fileID: 116371077}
+  Trackers: []
+  TargetSpawn: {fileID: 0}
 --- !u!114 &866144558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,23 +832,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
-  machineName: DESKTOP-8TRUE6K
-  width: 0.8
-  height: 0.335
-  head: {fileID: 7773729278615165803}
+  machineName: 
+  width: 0
+  height: 0
+  head: {fileID: 0}
   useXRCameras: 0
   useRenderTextures: 0
-  renderTextureSize: {x: 1280, y: 720}
+  renderTextureSize: {x: 0, y: 0}
   is3D: 0
-  exclusiveFullscreen: 1
+  exclusiveFullscreen: 0
   display: 0
   dualPipe: 0
   dualInstance: 0
   windowBounds:
     x: 0
     y: 0
-    width: 3440
-    height: 1440
+    width: 0
+    height: 0
   leftViewport:
     x: 0
     y: 0
@@ -911,12 +904,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa55f93f2f1a6184eb4f383351bef5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: LeftFoot_
-  PositionOffset: {x: -1.475, y: 0, z: 0.465}
+  ObjectName: Put QTM 6DOF object name here
+  PositionOffset: {x: 0, y: 0, z: 0}
   RotationOffset: {x: 0, y: 0, z: 0}
   useObjectOrientation: 1
   visibleMarkers: 1
-  markerScale: 0.097
+  markerScale: 0.05
 --- !u!1 &1110834060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,23 +1634,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
-  machineName: DESKTOP-8TRUE6K
-  width: 3.73
-  height: 2.08
-  head: {fileID: 7773729278615165803}
+  machineName: 
+  width: 0
+  height: 0
+  head: {fileID: 0}
   useXRCameras: 0
   useRenderTextures: 0
-  renderTextureSize: {x: 1280, y: 720}
+  renderTextureSize: {x: 0, y: 0}
   is3D: 0
-  exclusiveFullscreen: 1
-  display: 2
+  exclusiveFullscreen: 0
+  display: 0
   dualPipe: 0
   dualInstance: 0
   windowBounds:
     x: 0
     y: 0
-    width: 1280
-    height: 720
+    width: 0
+    height: 0
   leftViewport:
     x: 0
     y: 0
@@ -1776,9 +1769,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa55f93f2f1a6184eb4f383351bef5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: Head_
-  PositionOffset: {x: -1.475, y: -1.151, z: 0.465}
-  RotationOffset: {x: 0, y: 180, z: 0}
+  ObjectName: Put QTM 6DOF object name here
+  PositionOffset: {x: 0, y: 0, z: 0}
+  RotationOffset: {x: 0, y: 0, z: 0}
   useObjectOrientation: 1
   visibleMarkers: 1
   markerScale: 0.05
@@ -1856,9 +1849,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camPrefab: {fileID: 0}
-  leftEyeOffset: {x: -0.031, y: -0.0266, z: 0.041}
-  rightEyeOffset: {x: 0.031, y: -0.0266, z: 0.041}
-  nearClippingPlane: 0.02
+  leftEyeOffset: {x: 0, y: 0, z: 0}
+  rightEyeOffset: {x: 0, y: 0, z: 0}
+  nearClippingPlane: 0.01
   farClippingPlane: 100
 --- !u!114 &7773758911795923379
 MonoBehaviour:
@@ -1873,23 +1866,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
-  machineName: DESKTOP-8TRUE6K
-  width: 3.73
-  height: 2.08
-  head: {fileID: 7773729278615165803}
+  machineName: 
+  width: 0
+  height: 0
+  head: {fileID: 0}
   useXRCameras: 0
   useRenderTextures: 0
-  renderTextureSize: {x: 1280, y: 720}
+  renderTextureSize: {x: 0, y: 0}
   is3D: 0
-  exclusiveFullscreen: 1
-  display: 1
+  exclusiveFullscreen: 0
+  display: 0
   dualPipe: 0
   dualInstance: 0
   windowBounds:
     x: 0
     y: 0
-    width: 1280
-    height: 720
+    width: 0
+    height: 0
   leftViewport:
     x: 0
     y: 0
