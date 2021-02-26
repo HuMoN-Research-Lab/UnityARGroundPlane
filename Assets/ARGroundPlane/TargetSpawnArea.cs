@@ -40,6 +40,9 @@ public class TargetSpawnArea : MonoBehaviour
 
     [Space]
 
+    public Material ObstacleMat, TargetMat;
+
+
     // [Header("Colors chosen at random, audio corresponds in list order.")]
     // [Tooltip("The list of possible colors, increase size to increase color possibilities.")]
     // [SerializeField]
@@ -85,9 +88,26 @@ public class TargetSpawnArea : MonoBehaviour
         TargetPrefab.transform.localScale = new Vector3(TargetWidth, transform.localScale.y*.5f, TargetWidth);
         int obsCount = NumObstaclesToSpawn;
         for (int i = 0; i < NumTargetsToSpawn; i++) {
+            bool crowded = false;
             // Pick a random location within our box
             Vector3 randomPositionWithin = new Vector3(Random.Range(-1f, 1f), 1, Random.Range(-1f, 1f));
             randomPositionWithin = transform.TransformPoint(randomPositionWithin * 0.5f);
+            Transform[] allChildren = GetComponentsInChildren<Transform>();
+            foreach (Transform child in allChildren) {
+                if (Vector3.Distance(child.position,randomPositionWithin) > MinDistBetweenObjects) // MinDist needs to be .25
+                    continue;
+                else
+                {
+                crowded = true;
+                break;
+                }
+            }
+            
+            if (crowded == true){
+                i--;
+                continue;
+            }
+
             // Create our target
             GameObject targetInstance = Instantiate(TargetPrefab, randomPositionWithin, Quaternion.identity);
             DetectMarker targetScript = targetInstance.GetComponent<DetectMarker>();
@@ -101,8 +121,9 @@ public class TargetSpawnArea : MonoBehaviour
                 }
                 obsCount--;
             }
-            targetScript.SetColor((isObstacle ? ObstacleColor : TargetColor));
-            targetScript.GetComponentInChildren<DetectMarker>().SetColor((isObstacle ? ObstacleColor : TargetColor));
+            // targetScript.SetColor((isObstacle ? ObstacleColor : TargetColor));
+            targetScript.SetMaterial((isObstacle ? ObstacleMat : TargetMat));
+            // targetScript.GetComponentInChildren<DetectMarker>().SetColor((isObstacle ? ObstacleColor : TargetColor));
             targetScript.SetAudioFeedback((isObstacle ? Sounds[2] : Sounds[0]));
             targetScript.targetJoints = HitJoints;
 
