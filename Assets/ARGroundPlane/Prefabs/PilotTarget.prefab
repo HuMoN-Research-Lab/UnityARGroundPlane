@@ -222,4 +222,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetJoints:
-  - TESTBALL
+  - LeftFoot
+  - RightFoot
