@@ -44,6 +44,7 @@ namespace QualisysRealTime.Unity
                 newMarker.name = markerData[i].Name;
                 newMarker.transform.parent = markerRoot.transform;
                 newMarker.transform.localScale = Vector3.one * markerScale;
+                newMarker.GetComponent<Collider>().isTrigger = true;
                 newMarker.SetActive(false);
                 markers.Add(newMarker);
             }
