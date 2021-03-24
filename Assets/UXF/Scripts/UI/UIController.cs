@@ -47,6 +47,8 @@ namespace UXF.UI
         [Tooltip("Should the terms and conditions checkbox be pre-ticked?")]
         public bool tsAndCsInitialState = false;
 
+        public Session UXF_Session;
+
         public bool RequiresFilePathElement
         {
             get
@@ -130,7 +132,7 @@ namespace UXF.UI
 
         void UpdateUIState()
         {
-            if (settingsElement != null) canvas.enabled = (startupMode == StartupMode.BuiltInUI);
+            if (settingsElement != null) canvas.enabled = (startupMode == StartupMode.BuiltInUI && !(UXF_Session.currentBlockNum>0));
         }
 
         void UpdateExperimentProfileElementState()

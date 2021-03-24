@@ -1,0 +1,2 @@
+experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,ListTargetsAndObstacles
+my_experiment,eagle-3564e38c-d9dc-4efc-a8fc-f03d253d0896,1,1,1,1,2.631043,2.66,null

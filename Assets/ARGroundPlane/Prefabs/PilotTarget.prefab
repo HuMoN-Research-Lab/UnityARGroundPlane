@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1689040456923597028}
   - component: {fileID: 4587301665434838937}
   - component: {fileID: 6151985733333458697}
+  - component: {fileID: -7212155395181789165}
   m_Layer: 0
   m_Name: PilotTarget
   m_TagString: Untagged
@@ -239,3 +240,25 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.00000005960464, y: 0, z: -0.00000008940696}
+--- !u!114 &-7212155395181789165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689040456923597035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13dbc7aef009231419c2e645c8e8579b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: pilottarget
+  measurementDescriptor: position
+  customHeader:
+  - pos_x
+  - pos_y
+  - pos_z
+  - rot_x
+  - rot_y
+  - rot_z
+  updateType: 0

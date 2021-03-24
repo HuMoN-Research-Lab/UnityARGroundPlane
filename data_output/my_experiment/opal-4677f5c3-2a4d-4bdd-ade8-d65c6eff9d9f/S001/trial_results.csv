@@ -1,0 +1,2 @@
+experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,ListTargetsAndObstacles
+my_experiment,opal-4677f5c3-2a4d-4bdd-ade8-d65c6eff9d9f,1,1,1,1,9.572858,22.071,RandomTargetSpawner (ChildTargetTracker)
