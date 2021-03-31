@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UXF;
 
 public class TrialBegin : MonoBehaviour
@@ -19,9 +20,14 @@ public class TrialBegin : MonoBehaviour
             Debug.Log("Key Hit");
             Block block = UXF_Session.CreateBlock();
             Trial trial = block.CreateTrial();
-            trial.settings.SetValue("ListTargetsAndObstacles", Spawner.GetComponentInChildren<ChildTargetTracker>());
+            SceneManager.LoadScene("TrialStructure", LoadSceneMode.Additive);
+            //trial.settings.SetValue("ListTargetsAndObstacles", Spawner.GetComponentInChildren<ChildTargetTracker>());
             UXF_Session.BeginNextTrial();
             trialInProgress = true;
         }
+    }
+
+    public void AddScene(Scene s) {
+         SceneManager.LoadScene(s.name, LoadSceneMode.Additive);
     }
 }

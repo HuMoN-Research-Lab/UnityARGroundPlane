@@ -1,0 +1,9 @@
+timestamp,log_type,message
+0,Log,Scene TestBed is loaded
+0,Log,serverAddress = localhost serverPort = 7568 headMachine = DESKTOP-8TRUE6K running machine = DESKTOP-8TRUE6K
+0,Log,Display Active: Floor
+0,Log,Display Error for Display: Floor: Physical Display uses display index 1 but Unity does not detect that many displays
+0,Log,Display Active: Floor2
+0,Log,Display Error for Display: Floor2: Physical Display uses display index 2 but Unity does not detect that many displays
+0,Log,Display Active: HeadDisplay
+19.55464,Log,[<b><color=#AD477C>UXF</color></b>] Beginning session.

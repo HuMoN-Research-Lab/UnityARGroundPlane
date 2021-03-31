@@ -1,0 +1,13 @@
+timestamp,log_type,message
+0,Log,Scene TestBed is loaded
+0,Log,serverAddress = localhost serverPort = 7568 headMachine = DESKTOP-8TRUE6K running machine = DESKTOP-8TRUE6K
+0,Log,Display Active: Floor
+0,Log,Display Error for Display: Floor: Physical Display uses display index 1 but Unity does not detect that many displays
+0,Log,Display Active: Floor2
+0,Log,Display Error for Display: Floor2: Physical Display uses display index 2 but Unity does not detect that many displays
+0,Log,Display Active: HeadDisplay
+4.153908,Log,[<b><color=#AD477C>UXF</color></b>] Beginning session.
+10.75981,Log,Key Hit
+10.75981,Error,Scene 'TrialStructure' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+25.08474,Exception,KeyNotFoundException: The key "ListTargetsAndObstacles" was not found in the settings heirarchy. Use UXF Session Debugger (UXF menu at top of unity editor) to check your settings are being applied correctly.

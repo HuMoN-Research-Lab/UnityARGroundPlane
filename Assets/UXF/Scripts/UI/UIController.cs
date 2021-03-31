@@ -132,7 +132,7 @@ namespace UXF.UI
 
         void UpdateUIState()
         {
-            if (settingsElement != null) canvas.enabled = (startupMode == StartupMode.BuiltInUI && !(UXF_Session.currentBlockNum>0));
+            if (settingsElement != null) canvas.enabled = (startupMode == StartupMode.BuiltInUI);
         }
 
         void UpdateExperimentProfileElementState()

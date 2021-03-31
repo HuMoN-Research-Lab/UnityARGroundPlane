@@ -1,0 +1,13 @@
+timestamp,log_type,message
+0,Log,Scene TestBed is loaded
+0,Log,serverAddress = localhost serverPort = 7568 headMachine = DESKTOP-8TRUE6K running machine = DESKTOP-8TRUE6K
+0,Log,Display Active: Floor
+0,Log,Display Error for Display: Floor: Physical Display uses display index 1 but Unity does not detect that many displays
+0,Log,Display Active: Floor2
+0,Log,Display Error for Display: Floor2: Physical Display uses display index 2 but Unity does not detect that many displays
+0,Log,Display Active: HeadDisplay
+7.339375,Log,[<b><color=#AD477C>UXF</color></b>] Beginning session.
+10.61115,Log,Key Hit
+10.6222,Log,Scene TestBed is loaded
+10.62,Exception,NullReferenceException: Object reference not set to an instance of an object
+35.62983,Exception,KeyNotFoundException: The key "ListTargetsAndObstacles" was not found in the settings heirarchy. Use UXF Session Debugger (UXF menu at top of unity editor) to check your settings are being applied correctly.

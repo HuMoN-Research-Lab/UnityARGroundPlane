@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class TargetSpawnArea : MonoBehaviour
 {
-    [Tooltip("Drag your floor object here. Make its material 'std' from the Materials folder.")]
-    public Renderer Floor;
-    public Color FloorColor;
+    // [Tooltip("Drag your floor object here. Make its material 'std' from the Materials folder.")]
+    // //public Renderer Floor;
+    // public Color FloorColor;
 
     [Header("Set object's y-scale to the desired target height in meters.")]
 
@@ -81,7 +81,7 @@ public class TargetSpawnArea : MonoBehaviour
     void Awake()
     {
         // Set floot color to customized choice
-        Floor.material.color = FloorColor;
+        //Floor.material.color = FloorColor;
         
         // Scale the object we will be spawning such that it's height matches the height of our box
         Vector3 prefabScale = TargetPrefab.transform.localScale;
