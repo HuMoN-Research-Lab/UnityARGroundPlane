@@ -22,18 +22,18 @@ public class GenerateOutput : MonoBehaviour
     private string SessionFolder;
 
     void Start() {
-    //     // add scene exit functionality
-    //     SceneManager.sceneUnloaded += EndOfTrial;
+        // add scene exit functionality
+        SceneManager.sceneUnloaded += EndOfTrial;
 
-    //     // specify output folder
-    //     SessionFolder = System.DateTime.Now.ToString("hh.mm.ss.ffffff");
-         TrialCount = 0;
+        // specify output folder
+        SessionFolder = System.DateTime.Now.ToString("hh.mm.ss.ffffff");
+         TrialCount = 1;
         SceneManager.sceneLoaded += FindTargetSpawner;
-    //     XmlSettings = new XmlWriterSettings();
-    //     XmlSettings.Indent = true;
-    //     XmlSettings.IndentChars = "\t";
-    //     XmlSettings.ConformanceLevel = ConformanceLevel.Document;
-    //     XmlSettings.CheckCharacters = true;
+        XmlSettings = new XmlWriterSettings();
+        XmlSettings.Indent = true;
+        XmlSettings.IndentChars = "\t";
+        XmlSettings.ConformanceLevel = ConformanceLevel.Document;
+        XmlSettings.CheckCharacters = true;
     }
 
     void FindTargetSpawner(Scene scene, LoadSceneMode mode) {
@@ -45,8 +45,7 @@ public class GenerateOutput : MonoBehaviour
         SceneManager.sceneUnloaded += EndOfTrial;
 
         // specify output folder
-        SessionFolder = "Subject1";
-        //TrialCount = 1;
+        SessionFolder = "Pilot_01";
 
         XmlSettings = new XmlWriterSettings();
         XmlSettings.Indent = true;

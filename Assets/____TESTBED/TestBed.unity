@@ -352,7 +352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!135 &189087447
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -747,13 +747,14 @@ GameObject:
   - component: {fileID: 866144556}
   - component: {fileID: 866144557}
   - component: {fileID: 866144558}
+  - component: {fileID: 866144559}
   m_Layer: 0
   m_Name: DataOutput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &866144556
 Transform:
   m_ObjectHideFlags: 0
@@ -797,6 +798,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475923ffeb1855544a790ffad2a56d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &866144559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866144555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ff6f293786e3954fbfcc52c11fdaaff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetSpawn: {fileID: 0}
 --- !u!1 &877331918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,7 +1321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1793443376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1865,7 +1879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &7673208015517689828
 MonoBehaviour:
   m_ObjectHideFlags: 0
