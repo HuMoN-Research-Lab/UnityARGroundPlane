@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 //using QualisysRealTime.Unity; // eventually we'll want this TDW
-//using System.Text.Json;
+using System.Text.Json;
 
 // https://docs.unity3d.com/Manual/JSONSerialization.html <- use this TDW 4/7
 // and this : https://docs.unity3d.com/2019.4/Documentation/ScriptReference/JsonUtility.ToJson.html
@@ -33,7 +33,7 @@ public class GenJSON : MonoBehaviour
 
     void Awake()
     {
-        
+        //write whole json file from children
     }
 
 
