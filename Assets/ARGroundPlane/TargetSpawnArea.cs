@@ -129,6 +129,9 @@ public class TargetSpawnArea : MonoBehaviour
 
             // Organize underneath self in hierarchy
             targetInstance.transform.SetParent(transform);
+
+            // Update data for JSON output
+            targetInstance.GetComponent<FloorObjectInfo>().FillInfo();
         }
     }
 
