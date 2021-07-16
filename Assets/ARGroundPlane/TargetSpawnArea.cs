@@ -11,15 +11,15 @@ public class TargetSpawnArea : MonoBehaviour
     [Header("Set object's y-scale to the desired target height in meters.")]
 
     [Range (5, 200)]
-    [Tooltip("Number of targets to spawn.")]
+    [Tooltip("Total Number of Objects")]
     [SerializeField]
-    private int NumTargetsToSpawn = 25;
+    private int TotalNumberOfObjects = 25;
     private Color TargetColor = Color.black;
 
     [Range (5, 200)]
-    [Tooltip("Number of targets to spawn.")]
+    [Tooltip("This specifies the number of obstacles, the rest will be targets.")]
     [SerializeField]
-    private int NumObstaclesToSpawn = 25;
+    private int NumberOfObstacles = 25;
     private Color ObstacleColor = Color.red;
 
     [Tooltip("The gameobject/prefab to spawn.")]
@@ -82,17 +82,18 @@ public class TargetSpawnArea : MonoBehaviour
     {
         // Set floot color to customized choice
         Floor.material.color = FloorColor;
-        
+        Transform[] allChildren = null;
         // Scale the object we will be spawning such that it's height matches the height of our box
         Vector3 prefabScale = TargetPrefab.transform.localScale;
         TargetPrefab.transform.localScale = new Vector3(TargetWidth, transform.localScale.y*.5f, TargetWidth);
-        int obsCount = NumObstaclesToSpawn;
-        for (int i = 0; i < NumTargetsToSpawn; i++) {
+        int obsCount = NumberOfObstacles;
+
+        for (int i = 0; i < TotalNumberOfObjects; i++) {
             bool crowded = false;
             // Pick a random location within our box
             Vector3 randomPositionWithin = new Vector3(Random.Range(-1f, 1f), 1, Random.Range(-1f, 1f));
             randomPositionWithin = transform.TransformPoint(randomPositionWithin * 0.5f);
-            Transform[] allChildren = GetComponentsInChildren<Transform>();
+            allChildren = GetComponentsInChildren<Transform>();
             foreach (Transform child in allChildren) {
                 if (Vector3.Distance(child.position,randomPositionWithin) > MinDistBetweenObjects) // MinDist needs to be .25
                     continue;
@@ -114,17 +115,17 @@ public class TargetSpawnArea : MonoBehaviour
 
             // Set color, sound, and targeted markers
             //int randomIndex = Random.Range(0, Colors.Count);
-            bool isObstacle = (Random.value < .5 ? true : false);
-            if (isObstacle) {
-                if (obsCount <= 0) {
-                    isObstacle = false;
-                }
-                obsCount--;
-            }
+            // bool isObstacle = (Random.value < .5 ? true : false);
+            // if (isObstacle) {
+            //     if (obsCount <= 0) {
+            //         isObstacle = false;
+            //     }
+            //     obsCount--;
+            // }
             // targetScript.SetColor((isObstacle ? ObstacleColor : TargetColor));
-            targetScript.SetMaterial((isObstacle ? ObstacleMat : TargetMat));
+            targetScript.SetMaterial(TargetMat); //(isObstacle ? ObstacleMat : TargetMat));
             // targetScript.GetComponentInChildren<DetectMarker>().SetColor((isObstacle ? ObstacleColor : TargetColor));
-            targetScript.SetAudioFeedback((isObstacle ? Sounds[2] : Sounds[0]));
+            targetScript.SetAudioFeedback(Sounds[0]); //(isObstacle ? Sounds[2] : Sounds[0]));
             targetScript.targetJoints = HitJoints;
 
             // Organize underneath self in hierarchy
@@ -132,6 +133,18 @@ public class TargetSpawnArea : MonoBehaviour
 
             // Update data for JSON output
             targetInstance.GetComponent<FloorObjectInfo>().FillInfo();
+            targetInstance.name = targetInstance.name + "" + i;
+        }
+
+        //Transform[] allChildren = GetComponentsInChildren<Transform>();
+        for (int i = 0; i < NumberOfObstacles; i++) {
+            //grab object from list; in order
+            GameObject go = allChildren[i].gameObject;
+            DetectMarker d = go.GetComponent<DetectMarker>();
+            Debug.Log(d);
+            Debug.Log(ObstacleMat);
+            d.SetMaterial(ObstacleMat);
+            d.SetAudioFeedback(Sounds[2]);
         }
     }
 
