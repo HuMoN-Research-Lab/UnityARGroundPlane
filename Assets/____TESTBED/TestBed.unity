@@ -376,8 +376,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116371077}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.814, y: 0.001, z: -0.01}
-  m_LocalScale: {x: 6.997655, y: 0.00001, z: 1.9274374}
+  m_LocalPosition: {x: 3.67, y: 0.001, z: -0.01}
+  m_LocalScale: {x: 10.837968, y: 0.00001, z: 1.9274374}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -396,8 +396,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Floor: {fileID: 86302500}
   FloorColor: {r: 0.77647066, g: 0.8000001, b: 0.83921576, a: 0}
-  TotalNumberOfObjects: 120
-  NumberOfObstacles: 90
+  TotalNumberOfObjects: 180
+  NumberOfObstacles: 45
   TargetPrefab: {fileID: 1689040456923597035, guid: 0f99ef2f35a8d3a4d80e2dd7d0cb866e,
     type: 3}
   TargetWidth: 0.15
@@ -974,6 +974,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254843220}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &452112541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 452112542}
+  - component: {fileID: 452112543}
+  m_Layer: 0
+  m_Name: Floor3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &452112542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452112541}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 7.36, y: -1.142, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5442739366739184948}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &452112543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452112541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13e67f763fb5bc41ad34dfb8dc3d0ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  machineName: DESKTOP-8TRUE6K
+  width: 3.73
+  height: 2.08
+  head: {fileID: 7773729278615165803}
+  useXRCameras: 0
+  useRenderTextures: 0
+  renderTextureSize: {x: 1280, y: 720}
+  is3D: 0
+  exclusiveFullscreen: 1
+  display: 3
+  dualPipe: 0
+  dualInstance: 0
+  windowBounds:
+    x: 0
+    y: 0
+    width: 1280
+    height: 720
+  leftViewport:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  rightViewport:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  loadSettingsAtRuntime: 0
+  serializedLocation: settings.json
 --- !u!1 &519982454
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,7 +1847,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743889223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.95, y: -0.2355, z: 0.0019}
+  m_LocalPosition: {x: 9.66, y: -0.2355, z: 0.0019}
   m_LocalScale: {x: 1, y: 0.529, z: 2.5}
   m_Children: []
   m_Father: {fileID: 1899222303}
@@ -2512,6 +2585,7 @@ Transform:
   m_Children:
   - {fileID: 7667886451666826673}
   - {fileID: 6653562081652418608}
+  - {fileID: 452112542}
   m_Father: {fileID: 7671729788585215385}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
