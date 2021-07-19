@@ -13,13 +13,13 @@ public class TargetSpawnArea : MonoBehaviour
     [Range (5, 200)]
     [Tooltip("Total Number of Objects")]
     [SerializeField]
-    private int TotalNumberOfObjects = 25;
+    private int TotalNumberOfObjects = 0;
     private Color TargetColor = Color.black;
 
     [Range (5, 200)]
     [Tooltip("This specifies the number of obstacles, the rest will be targets.")]
     [SerializeField]
-    private int NumberOfObstacles = 25;
+    private int NumberOfObstacles = 0;
     private Color ObstacleColor = Color.red;
 
     [Tooltip("The gameobject/prefab to spawn.")]
@@ -82,7 +82,7 @@ public class TargetSpawnArea : MonoBehaviour
     {
         // Set floot color to customized choice
         Floor.material.color = FloorColor;
-        Transform[] allChildren = null;
+        List<Transform> allChildren = new List<Transform>();
         // Scale the object we will be spawning such that it's height matches the height of our box
         Vector3 prefabScale = TargetPrefab.transform.localScale;
         TargetPrefab.transform.localScale = new Vector3(TargetWidth, transform.localScale.y*.5f, TargetWidth);
@@ -93,9 +93,10 @@ public class TargetSpawnArea : MonoBehaviour
             // Pick a random location within our box
             Vector3 randomPositionWithin = new Vector3(Random.Range(-1f, 1f), 1, Random.Range(-1f, 1f));
             randomPositionWithin = transform.TransformPoint(randomPositionWithin * 0.5f);
-            allChildren = GetComponentsInChildren<Transform>();
+            allChildren = new List<Transform>(GetComponentsInChildren<Transform>());
+            // List is slower than array^
             foreach (Transform child in allChildren) {
-                if (Vector3.Distance(child.position,randomPositionWithin) > MinDistBetweenObjects) // MinDist needs to be .25
+                if (Vector3.Distance(child.position,randomPositionWithin) > MinDistBetweenObjects) // current MinDist is 0.13
                     continue;
                 else
                 {
@@ -137,14 +138,16 @@ public class TargetSpawnArea : MonoBehaviour
         }
 
         //Transform[] allChildren = GetComponentsInChildren<Transform>();
-        for (int i = 0; i < NumberOfObstacles; i++) {
+        for (; obsCount > 0; obsCount--) { // -1 to 'solve' off by one error in producing correct number of obstacles
             //grab object from list; in order
-            GameObject go = allChildren[i].gameObject;
-            DetectMarker d = go.GetComponent<DetectMarker>();
+            Transform go = allChildren[obsCount];
+            Debug.Log(go);
+            DetectMarker d = go.GetComponentInChildren<DetectMarker>();
             Debug.Log(d);
             Debug.Log(ObstacleMat);
             d.SetMaterial(ObstacleMat);
             d.SetAudioFeedback(Sounds[2]);
+            d.GetComponent<FloorObjectInfo>().FillInfo();
         }
     }
 

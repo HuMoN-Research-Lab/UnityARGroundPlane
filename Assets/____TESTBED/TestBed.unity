@@ -377,7 +377,7 @@ Transform:
   m_GameObject: {fileID: 116371077}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.814, y: 0.001, z: -0.01}
-  m_LocalScale: {x: 6.997655, y: 0.001, z: 1.9274374}
+  m_LocalScale: {x: 6.997655, y: 0.00001, z: 1.9274374}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -396,8 +396,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Floor: {fileID: 86302500}
   FloorColor: {r: 0.77647066, g: 0.8000001, b: 0.83921576, a: 0}
-  TotalNumberOfObjects: 10
-  NumberOfObstacles: 5
+  TotalNumberOfObjects: 120
+  NumberOfObstacles: 90
   TargetPrefab: {fileID: 1689040456923597035, guid: 0f99ef2f35a8d3a4d80e2dd7d0cb866e,
     type: 3}
   TargetWidth: 0.15
