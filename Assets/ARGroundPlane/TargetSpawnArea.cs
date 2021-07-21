@@ -10,14 +10,14 @@ public class TargetSpawnArea : MonoBehaviour
 
     [Header("Set object's y-scale to the desired target height in meters.")]
 
-    [Range (5, 200)]
-    [Tooltip("Total Number of Objects")]
+    [Range (1, 20)]
+    [Tooltip("Number of Targets")]
     [SerializeField]
-    private int TotalNumberOfObjects = 0;
+    private int NumberOfTargets= 0;
     private Color TargetColor = Color.black;
 
-    [Range (5, 200)]
-    [Tooltip("This specifies the number of obstacles, the rest will be targets.")]
+    [Range (1, 20)]
+    [Tooltip("This specifies the number of Obstacles, the rest will be targets.")]
     [SerializeField]
     private int NumberOfObstacles = 0;
     private Color ObstacleColor = Color.red;
@@ -42,6 +42,10 @@ public class TargetSpawnArea : MonoBehaviour
 
     public Material ObstacleMat, TargetMat;
 
+    [Space]
+
+    public bool RandomRotation = false;
+
 
     // [Header("Colors chosen at random, audio corresponds in list order.")]
     // [Tooltip("The list of possible colors, increase size to increase color possibilities.")]
@@ -65,15 +69,6 @@ public class TargetSpawnArea : MonoBehaviour
     private void SaveCurrentTargets() {
         // run through all children, save color/loc
     }
-    // // Option to load saved target config
-    // private void LoadTargetConfig(string path) {
-    //     // load target config file from path on disk
-    // }
-    // public string DebugConfigPath = "";
-    // [ContextMenu("Load Target Configuration")]
-    // private void DebugConfigLoad() {
-    //     LoadTargetConfig(DebugConfigPath);
-    // }
 
 
     // Awake() is called when an object is instantiated and activated for the first time, so it will happen on a scene loading transition.
@@ -88,7 +83,7 @@ public class TargetSpawnArea : MonoBehaviour
         TargetPrefab.transform.localScale = new Vector3(TargetWidth, transform.localScale.y*.5f, TargetWidth);
         int obsCount = NumberOfObstacles;
 
-        for (int i = 0; i <= TotalNumberOfObjects; i++) {
+        for (int i = 0; i < NumberOfTargets; i++) {
             bool crowded = false;
             // Pick a random location within our box
             Vector3 randomPositionWithin = new Vector3(Random.Range(-1f, 1f), 1, Random.Range(-1f, 1f));
@@ -96,7 +91,7 @@ public class TargetSpawnArea : MonoBehaviour
             allChildren = new List<Transform>(GetComponentsInChildren<Transform>());
             // List is slower than array^
             foreach (Transform child in allChildren) {
-                if (Vector3.Distance(child.position,randomPositionWithin) > MinDistBetweenObjects) // current MinDist is 0.13
+                if (Vector3.Distance(child.position, randomPositionWithin) > MinDistBetweenObjects) // current MinDist is 0.13
                     continue;
                 else
                 {
@@ -114,41 +109,59 @@ public class TargetSpawnArea : MonoBehaviour
             GameObject targetInstance = Instantiate(TargetPrefab, randomPositionWithin, Quaternion.identity);
             DetectMarker targetScript = targetInstance.GetComponent<DetectMarker>();
 
-            // Set color, sound, and targeted markers
-            //int randomIndex = Random.Range(0, Colors.Count);
-            // bool isObstacle = (Random.value < .5 ? true : false);
-            // if (isObstacle) {
-            //     if (obsCount <= 0) {
-            //         isObstacle = false;
-            //     }
-            //     obsCount--;
-            // }
-            // targetScript.SetColor((isObstacle ? ObstacleColor : TargetColor));
-            targetScript.SetMaterial(ObstacleMat); //(isObstacle ? ObstacleMat : TargetMat));
-            // targetScript.GetComponentInChildren<DetectMarker>().SetColor((isObstacle ? ObstacleColor : TargetColor));
-            targetScript.SetAudioFeedback(Sounds[0]); //(isObstacle ? Sounds[2] : Sounds[0]));
+            targetScript.SetMaterial(TargetMat);
+            targetScript.SetAudioFeedback(Sounds[0]);
             targetScript.targetJoints = HitJoints;
 
             // Organize underneath self in hierarchy
             targetInstance.transform.SetParent(transform);
 
             // Update data for JSON output
-            targetInstance.GetComponent<FloorObjectInfo>().FillInfo();
+            targetInstance.GetComponent<FloorObjectInfo>().FillInfo("target");
             targetInstance.name = targetInstance.name + "" + i;
         }
 
-        //Transform[] allChildren = GetComponentsInChildren<Transform>();
-        for (int i = 0; i <= NumberOfObstacles; i++) { // -1 to 'solve' off by one error in producing correct number of obstacles
-            //grab object from list; in order
-            Transform go = allChildren[i];
-            Debug.Log(go);
-            DetectMarker d = go.GetComponentInChildren<DetectMarker>();
-            // Debug.Log(d);
-            // Debug.Log(ObstacleMat);
-            d.SetMaterial(TargetMat);
-            d.SetAudioFeedback(Sounds[2]);
-            d.GetComponent<FloorObjectInfo>().FillInfo();
+        for (int i = 0; i < NumberOfObstacles; i++) {
+            bool crowded = false;
+            // Pick a random location within our box
+            Vector3 randomPositionWithin = new Vector3(Random.Range(-1f, 1f), 1, Random.Range(-1f, 1f));
+            randomPositionWithin = transform.TransformPoint(randomPositionWithin * 0.5f);
+            allChildren = new List<Transform>(GetComponentsInChildren<Transform>());
+            // List is slower than array^
+            foreach (Transform child in allChildren) {
+                if (Vector3.Distance(child.position, randomPositionWithin) > MinDistBetweenObjects) // current MinDist is 0.13
+                    continue;
+                else
+                {
+                crowded = true;
+                break;
+                }
+            }
+            
+            if (crowded == true){
+                i--;
+                continue;
+            }
+
+            // Create our target
+            float randYRot = Random.Range(0, 360);
+            GameObject targetInstance = Instantiate(TargetPrefab, randomPositionWithin, Quaternion.identity);
+            Vector3 v = targetInstance.transform.rotation.eulerAngles;
+            //targetInstance.gameObject.transform.rotation.eulerAngles = new Vector3(v.x, randYRot, v.z);
+            DetectMarker targetScript = targetInstance.GetComponent<DetectMarker>();
+
+            targetScript.SetMaterial(ObstacleMat);
+            targetScript.SetAudioFeedback(Sounds[2]);
+            targetScript.targetJoints = HitJoints;
+
+            // Organize underneath self in hierarchy
+            targetInstance.transform.SetParent(transform);
+
+            // Update data for JSON output
+            // targetInstance.GetComponent<FloorObjectInfo>().FillInfo("obstacle");
+            // targetInstance.name = targetInstance.name + "" + i;
         }
+
     }
 
     
