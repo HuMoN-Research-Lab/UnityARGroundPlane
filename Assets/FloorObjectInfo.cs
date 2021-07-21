@@ -13,6 +13,8 @@ public class FloorObjectInfo : MonoBehaviour
         position = transform.position;
         Renderer r = GetComponent<Renderer>();
         //Debug.Log(r.material.name);
-        type = r.material.name.Contains("obsMat") ? "OBSTACLE" : "TARGET";
+        double test;
+        bool isNum = double.TryParse(r.material.name, out double result);
+        type = (isNum ? "OBSTACLE" : "TARGET");
     }
 }

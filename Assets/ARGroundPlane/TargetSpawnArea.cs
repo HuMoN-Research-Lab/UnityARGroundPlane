@@ -88,7 +88,7 @@ public class TargetSpawnArea : MonoBehaviour
         TargetPrefab.transform.localScale = new Vector3(TargetWidth, transform.localScale.y*.5f, TargetWidth);
         int obsCount = NumberOfObstacles;
 
-        for (int i = 0; i < TotalNumberOfObjects; i++) {
+        for (int i = 0; i <= TotalNumberOfObjects; i++) {
             bool crowded = false;
             // Pick a random location within our box
             Vector3 randomPositionWithin = new Vector3(Random.Range(-1f, 1f), 1, Random.Range(-1f, 1f));
@@ -124,7 +124,7 @@ public class TargetSpawnArea : MonoBehaviour
             //     obsCount--;
             // }
             // targetScript.SetColor((isObstacle ? ObstacleColor : TargetColor));
-            targetScript.SetMaterial(TargetMat); //(isObstacle ? ObstacleMat : TargetMat));
+            targetScript.SetMaterial(ObstacleMat); //(isObstacle ? ObstacleMat : TargetMat));
             // targetScript.GetComponentInChildren<DetectMarker>().SetColor((isObstacle ? ObstacleColor : TargetColor));
             targetScript.SetAudioFeedback(Sounds[0]); //(isObstacle ? Sounds[2] : Sounds[0]));
             targetScript.targetJoints = HitJoints;
@@ -138,14 +138,14 @@ public class TargetSpawnArea : MonoBehaviour
         }
 
         //Transform[] allChildren = GetComponentsInChildren<Transform>();
-        for (; obsCount > 0; obsCount--) { // -1 to 'solve' off by one error in producing correct number of obstacles
+        for (int i = 0; i <= NumberOfObstacles; i++) { // -1 to 'solve' off by one error in producing correct number of obstacles
             //grab object from list; in order
-            Transform go = allChildren[obsCount];
+            Transform go = allChildren[i];
             Debug.Log(go);
             DetectMarker d = go.GetComponentInChildren<DetectMarker>();
-            Debug.Log(d);
-            Debug.Log(ObstacleMat);
-            d.SetMaterial(ObstacleMat);
+            // Debug.Log(d);
+            // Debug.Log(ObstacleMat);
+            d.SetMaterial(TargetMat);
             d.SetAudioFeedback(Sounds[2]);
             d.GetComponent<FloorObjectInfo>().FillInfo();
         }
