@@ -486,7 +486,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -570,7 +570,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -887,7 +887,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -1035,7 +1035,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240621671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.983, y: -0.13, z: 0.0019}
+  m_LocalPosition: {x: -1.983, y: -0.22, z: 0.0019}
   m_LocalScale: {x: 1, y: 0.529, z: 2.5}
   m_Children: []
   m_Father: {fileID: 1899222303}
@@ -1280,7 +1280,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -1364,7 +1364,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -1521,7 +1521,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -1747,7 +1747,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -1831,7 +1831,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -2063,7 +2063,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -2490,7 +2490,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -2668,7 +2668,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -3018,7 +3018,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -3102,7 +3102,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -3186,7 +3186,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -3270,7 +3270,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -3354,7 +3354,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -3409,7 +3409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743889223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.23, y: -0.13, z: 0.0019}
+  m_LocalPosition: {x: 9.23, y: -0.22, z: 0.0019}
   m_LocalScale: {x: 1, y: 0.529, z: 2.5}
   m_Children: []
   m_Father: {fileID: 1899222303}
@@ -3561,7 +3561,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -3755,7 +3755,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -3839,7 +3839,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}
@@ -4078,7 +4078,7 @@ MonoBehaviour:
   - JSM_LToeTip
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
   TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
-  RandomRotation: 0
+  RandomRotation: 1
   Sounds:
   - {fileID: 8300000, guid: ddf8cec028243574cba092d9934473a9, type: 3}
   - {fileID: 8300000, guid: a267670f31ac1c34d82affe18399a11a, type: 3}

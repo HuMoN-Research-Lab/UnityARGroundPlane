@@ -33,6 +33,8 @@ public class GenJSON : MonoBehaviour
             writer = new StreamWriter("DataOutput/" + System.DateTime.Now.ToString("MM_dd_yyyy.hh.mm") + "_Trial_" + ++TrialCount + ".json");
         } catch {
             //create /DataOutput
+
+            //writer = new StreamWriter("DataOutput/" + System.DateTime.Now.ToString("MM_dd_yyyy.hh.mm") + "_Trial_" + ++TrialCount + ".json");
         }
         writer.WriteLine("[");
         writer.WriteLine("\"" + System.DateTime.Now.ToString("hh.mm.ss.ffffff") + "\",");

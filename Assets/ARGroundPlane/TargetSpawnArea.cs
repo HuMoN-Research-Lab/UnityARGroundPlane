@@ -43,7 +43,7 @@ public class TargetSpawnArea : MonoBehaviour
     public Material ObstacleMat, TargetMat;
 
     [Space]
-
+    [Tooltip("Randomize object rotation.")]
     public bool RandomRotation = false;
 
 
@@ -144,10 +144,15 @@ public class TargetSpawnArea : MonoBehaviour
             }
 
             // Create our target
-            float randYRot = Random.Range(0, 360);
+            int randYRot = Random.Range(0, 360);
+            //Debug.Log(randYRot);
             GameObject targetInstance = Instantiate(TargetPrefab, randomPositionWithin, Quaternion.identity);
-            Vector3 v = targetInstance.transform.rotation.eulerAngles;
-            //targetInstance.gameObject.transform.rotation.eulerAngles = new Vector3(v.x, randYRot, v.z);
+            Debug.Log(targetInstance.transform.rotation);
+            if (RandomRotation) {
+                targetInstance.transform.rotation = Quaternion.AngleAxis(randYRot, Vector3.up);
+            }
+            Debug.Log(targetInstance.transform.rotation);
+
             DetectMarker targetScript = targetInstance.GetComponent<DetectMarker>();
 
             targetScript.SetMaterial(ObstacleMat);
