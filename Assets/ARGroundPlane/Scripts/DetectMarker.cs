@@ -22,6 +22,12 @@ public class DetectMarker : MonoBehaviour
         r.material = c;
     }
 
+    public void SetRotation(Quaternion quaternion) {
+        Debug.Log("New Rotation: " + quaternion + "\nCurrent Rotation: " + this.transform.rotation);
+        this.transform.rotation = quaternion;
+        Debug.Log("Post-Rotation: " + this.transform.rotation);
+    }
+
     // TODO: Move hitbox above target?
 
     void Awake() {

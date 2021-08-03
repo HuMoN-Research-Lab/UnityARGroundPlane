@@ -147,11 +147,6 @@ public class TargetSpawnArea : MonoBehaviour
             int randYRot = Random.Range(0, 360);
             //Debug.Log(randYRot);
             GameObject targetInstance = Instantiate(TargetPrefab, randomPositionWithin, Quaternion.identity);
-            Debug.Log(targetInstance.transform.rotation);
-            if (RandomRotation) {
-                targetInstance.transform.rotation = Quaternion.AngleAxis(randYRot, Vector3.up);
-            }
-            Debug.Log(targetInstance.transform.rotation);
 
             DetectMarker targetScript = targetInstance.GetComponent<DetectMarker>();
 
@@ -161,6 +156,9 @@ public class TargetSpawnArea : MonoBehaviour
 
             // Organize underneath self in hierarchy
             targetInstance.transform.SetParent(transform);
+
+            //targetInstance.transform.rotation = Quaternion.Euler(0, 90, 0);
+            targetScript.SetRotation(Quaternion.Euler(0, randYRot, 0));
 
             // Update data for JSON output
             targetInstance.GetComponent<FloorObjectInfo>().FillInfo("obstacle");
