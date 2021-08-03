@@ -163,8 +163,8 @@ public class TargetSpawnArea : MonoBehaviour
             targetInstance.transform.SetParent(transform);
 
             // Update data for JSON output
-            // targetInstance.GetComponent<FloorObjectInfo>().FillInfo("obstacle");
-            // targetInstance.name = targetInstance.name + "" + i;
+            targetInstance.GetComponent<FloorObjectInfo>().FillInfo("obstacle");
+            targetInstance.name = targetInstance.name + "" + i;
         }
 
     }

@@ -29,15 +29,18 @@ public class GenJSON : MonoBehaviour
         //write whole json file from children
         //Open new writer for file for this trial
         StreamWriter writer = null;
+
+        System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
+        int cur_time = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
         try {
-            writer = new StreamWriter("DataOutput/" + System.DateTime.Now.ToString("MM_dd_yyyy.hh.mm") + "_Trial_" + ++TrialCount + ".json");
+            writer = new StreamWriter("DataOutput/" + cur_time + "_Trial_" + ++TrialCount + ".json");
         } catch {
             //create /DataOutput
-
-            //writer = new StreamWriter("DataOutput/" + System.DateTime.Now.ToString("MM_dd_yyyy.hh.mm") + "_Trial_" + ++TrialCount + ".json");
+            Directory.CreateDirectory("DataOutput");
+            writer = new StreamWriter("DataOutput/" + cur_time + "_Trial_" + ++TrialCount + ".json");
         }
         writer.WriteLine("[");
-        writer.WriteLine("\"" + System.DateTime.Now.ToString("hh.mm.ss.ffffff") + "\",");
+        writer.WriteLine("\"" + cur_time + "\",");
         //grab all of "FloorObjectInfo" from children
         FloorObjectInfo[] allChildren = AllTargetSpawners.GetComponentsInChildren<FloorObjectInfo>();
         Debug.Log(allChildren);
