@@ -38,7 +38,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/XRExperimentStructure/Experiment 1/Scenes/Black Dots AR Ground.unity
     guid: 4a4f1387fcd3b7d4ca6593d7798286ca
-  - enabled: 1
+  - enabled: 0
     path: Assets/____TESTBED/TestBed.unity
     guid: 689f30f6b371cae4eacc2b13e946bb65
+  - enabled: 1
+    path: Assets/____TESTBED/TestBed_PlaneCalibration.unity
+    guid: 6a89a3cc7e3d346468bcc993144fd8ff
   m_configObjects: {}
