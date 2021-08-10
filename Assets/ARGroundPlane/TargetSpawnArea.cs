@@ -106,6 +106,8 @@ public class TargetSpawnArea : MonoBehaviour
             }
 
             // Create our target
+            int randYRot = Random.Range(0, 360);
+            //Debug.Log(randYRot);
             GameObject targetInstance = Instantiate(TargetPrefab, randomPositionWithin, Quaternion.identity);
             DetectMarker targetScript = targetInstance.GetComponent<DetectMarker>();
 
@@ -115,6 +117,8 @@ public class TargetSpawnArea : MonoBehaviour
 
             // Organize underneath self in hierarchy
             targetInstance.transform.SetParent(transform);
+
+            if (RandomRotation) targetScript.SetRotation(Quaternion.Euler(0, randYRot, 0));
 
             // Update data for JSON output
             targetInstance.GetComponent<FloorObjectInfo>().FillInfo("target");
@@ -144,8 +148,7 @@ public class TargetSpawnArea : MonoBehaviour
             }
 
             // Create our target
-            int randYRot = Random.Range(0, 360);
-            //Debug.Log(randYRot);
+            
             GameObject targetInstance = Instantiate(TargetPrefab, randomPositionWithin, Quaternion.identity);
 
             DetectMarker targetScript = targetInstance.GetComponent<DetectMarker>();
@@ -158,7 +161,6 @@ public class TargetSpawnArea : MonoBehaviour
             targetInstance.transform.SetParent(transform);
 
             //targetInstance.transform.rotation = Quaternion.Euler(0, 90, 0);
-            targetScript.SetRotation(Quaternion.Euler(0, randYRot, 0));
 
             // Update data for JSON output
             targetInstance.GetComponent<FloorObjectInfo>().FillInfo("obstacle");
