@@ -24,13 +24,19 @@ public class JSONReader : MonoBehaviour
         // test w/ C:\Users\Matthis Lab\Documents\GitHub\UnityARGroundPlane\DataOutput\1628604831_Trial_5.json
         // TODO: Grab iteratively
         StreamReader reader = new StreamReader("DataOutput/1628604831_Trial_5.json");
+        floorObjects = new List<FloorObjectInfo>();
         // serialize; ignore first item, loop through rest and place until line read is '[' - make this a function to call for scene switching
         ParseJSONFile(reader);
     }
 
     // Update is called once per frame
     public FloorObjectInfo CreateFromJSON(string jString) {
-        return JsonUtility.FromJson<FloorObjectInfo>(jString);
+        //return JsonUtility.FromJson<FloorObjectInfo>(jString);
+        Debug.Log(jString);
+        string[] brokenLine = jString.Split(',');
+        Debug.Log(brokenLine);
+        GameObject targetInstance = Instantiate(TargetPrefab, Vector3.zero, Quaternion.identity);
+        return targetInstance.GetComponent<FloorObjectInfo>();
     }
 
     private void ParseJSONFile(StreamReader sr) {
@@ -39,7 +45,7 @@ public class JSONReader : MonoBehaviour
         string line;
         while ((line = sr.ReadLine()) != "]") {
             //remove comma
-            line.Remove(line.Length-1);
+            line = line.Remove(line.Length-1);
             //call 'Create...' and add to list
             floorObjects.Add(CreateFromJSON(line));
         }
