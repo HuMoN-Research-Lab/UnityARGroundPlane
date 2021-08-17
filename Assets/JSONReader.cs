@@ -21,9 +21,9 @@ public class JSONReader : MonoBehaviour
     // Start is called before the first frame update
     void Awake() {
         // grab first JSON file from DataOutput
-        // test w/ C:\Users\Matthis Lab\Documents\GitHub\UnityARGroundPlane\DataOutput\1628604831_Trial_5.json
+        // test w/ C:\Users\Matthis Lab\Documents\GitHub\UnityARGroundPlane\DataOutput\1629225903_Trial_1.json
         // TODO: Grab iteratively
-        StreamReader reader = new StreamReader("DataOutput/1628604831_Trial_5.json");
+        StreamReader reader = new StreamReader("DataOutput/1629225903_Trial_1.json");
         floorObjects = new List<FloorObjectInfo>();
         // serialize; ignore first item, loop through rest and place until line read is '[' - make this a function to call for scene switching
         ParseJSONFile(reader);
@@ -31,11 +31,47 @@ public class JSONReader : MonoBehaviour
 
     // Update is called once per frame
     public FloorObjectInfo CreateFromJSON(string jString) {
-        //return JsonUtility.FromJson<FloorObjectInfo>(jString);
-        Debug.Log(jString);
-        string[] brokenLine = jString.Split(',');
-        Debug.Log(brokenLine);
+        //{"position":{"x":-1.2431681156158448,"y":0.0010050020646303893,"z":-0.4258761405944824},"yRotation":0.0,"type":"obstacle"}
+        char[] separators = new char[] { '{', '}', ':', ',', '"' };
+        string[] brokenLine = jString.Split(separators, System.StringSplitOptions.RemoveEmptyEntries);
+        //Debug.Log(brokenLine);
+        Vector3 tempPosition = new Vector3();
+        float tempYRot = 0.0f;
+        string tempType = "";
+        for (int i = 0; i < brokenLine.Length; i++) {
+            switch(brokenLine[i]) {
+                case "position":
+                    //nothing
+                    break;
+                case "x":
+                    tempPosition.x = float.Parse(brokenLine[i+1]);
+                    break;
+                case "y":
+                    tempPosition.y = float.Parse(brokenLine[i+1]);
+                    break;
+                case "z":
+                    tempPosition.z = float.Parse(brokenLine[i+1]);
+                    break;
+                case ",":
+                    break;
+                case "yRotation":
+                    tempYRot = float.Parse(brokenLine[i+1]);
+                    break;
+                case "type":
+                    tempType = brokenLine[i+1];
+                    break;
+                default:
+                    break;
+            }
+        }
+
         GameObject targetInstance = Instantiate(TargetPrefab, Vector3.zero, Quaternion.identity);
+        FloorObjectInfo targetScript = targetInstance.GetComponent<FloorObjectInfo>();
+
+        targetScript.position = tempPosition;
+        targetScript.yRotation = tempYRot;
+        targetScript.type = tempType;
+        
         return targetInstance.GetComponent<FloorObjectInfo>();
     }
 

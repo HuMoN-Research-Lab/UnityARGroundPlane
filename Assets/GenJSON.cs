@@ -43,7 +43,7 @@ public class GenJSON : MonoBehaviour
         writer.WriteLine("\"" + cur_time + "\",");
         //grab all of "FloorObjectInfo" from children
         FloorObjectInfo[] allChildren = AllTargetSpawners.GetComponentsInChildren<FloorObjectInfo>();
-        Debug.Log(allChildren);
+        //Debug.Log(allChildren);
         //serialize/write in loop
         for (int i = 0; i < allChildren.Length; i++) {
             writer.WriteLine(JsonUtility.ToJson(allChildren[i]) + (i == allChildren.Length-1?"":","));
