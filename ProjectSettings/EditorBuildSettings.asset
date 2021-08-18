@@ -5,43 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/ARGroundPlane/Scenes/demo_target_cave.unity
-    guid: 8459cda503d721d40b049b586917ba8a
-  - enabled: 0
-    path: Assets/XRExperimentStructure/PilotData_08252020/Black Dots AR Ground.unity
-    guid: 957f9a84a4406c24caf0953af9dcf1f4
-  - enabled: 0
-    path: Assets/ARGroundPlane/Scenes/Feb_Demo.unity
-    guid: b057465483d76e44ba5fe80e464f6e6b
-  - enabled: 0
-    path: Assets/ARGroundPlane/Scenes/latency_test.unity
-    guid: 09346ffff0e782b44a9b70afd9a03205
-  - enabled: 0
-    path: Assets/ARGroundPlane/Scenes/PilotScene.unity
-    guid: a35a99915503faf49917f9f80d4171a7
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/XRExperimentStructure/Experiment 1/Scenes/Black Dots AR Ground.unity
-    guid: 4a4f1387fcd3b7d4ca6593d7798286ca
-  - enabled: 0
+  - enabled: 1
     path: Assets/____TESTBED/TestBed.unity
     guid: 689f30f6b371cae4eacc2b13e946bb65
-  - enabled: 1
+  - enabled: 0
     path: Assets/____TESTBED/TestBed_PlaneCalibration.unity
     guid: 6a89a3cc7e3d346468bcc993144fd8ff
   m_configObjects: {}

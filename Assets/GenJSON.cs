@@ -13,7 +13,7 @@ using UnityEngine.SceneManagement;
 public class GenJSON : MonoBehaviour
 {
 
-    private static int TrialCount = 0;
+    private static int TrialCount = 1;
 
     [SerializeField]
     private GameObject AllTargetSpawners;
@@ -33,12 +33,13 @@ public class GenJSON : MonoBehaviour
         System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
         int cur_time = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
         try {
-            writer = new StreamWriter("DataOutput/" + cur_time + "_Trial_" + ++TrialCount + ".json");
+            writer = new StreamWriter("DataOutput/" + cur_time + "_Trial_" + TrialCount + ".json");
         } catch {
             //create /DataOutput
             Directory.CreateDirectory("DataOutput");
-            writer = new StreamWriter("DataOutput/" + cur_time + "_Trial_" + ++TrialCount + ".json");
+            writer = new StreamWriter("DataOutput/" + cur_time + "_Trial_" + TrialCount + ".json");
         }
+        TrialCount++;
         writer.WriteLine("[");
         writer.WriteLine("\"" + cur_time + "\",");
         //grab all of "FloorObjectInfo" from children
