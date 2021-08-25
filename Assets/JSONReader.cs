@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
@@ -21,9 +21,9 @@ public class JSONReader : MonoBehaviour
     // Start is called before the first frame update
     void Awake() {
         // grab first JSON file from DataOutput
-        // test w/ C:\Users\Matthis Lab\Documents\GitHub\UnityARGroundPlane\DataOutput\1629225903_Trial_1.json
+        // test w/ C:\Users\Matthis Lab\Documents\GitHub\UnityARGroundPlane\DataOutput\1629814433_Trial_1.json
         // TODO: Grab iteratively
-        StreamReader reader = new StreamReader("DataOutput/1629225903_Trial_1.json");
+        StreamReader reader = new StreamReader("DataOutput/1629814433_Trial_1.json");
         floorObjects = new List<FloorObjectInfo>();
         // serialize; ignore first item, loop through rest and place until line read is '[' - make this a function to call for scene switching
         ParseJSONFile(reader);
@@ -66,11 +66,26 @@ public class JSONReader : MonoBehaviour
         }
 
         GameObject targetInstance = Instantiate(TargetPrefab, Vector3.zero, Quaternion.identity);
-        FloorObjectInfo targetScript = targetInstance.GetComponent<FloorObjectInfo>();
+        FloorObjectInfo foi = targetInstance.GetComponent<FloorObjectInfo>();
+        DetectMarker dm = targetInstance.GetComponent<DetectMarker>();
+        //Debug.Log(tempPosition);
 
-        targetScript.position = tempPosition;
-        targetScript.yRotation = tempYRot;
-        targetScript.type = tempType;
+        foi.position = tempPosition;
+        foi.yRotation = tempYRot;
+        foi.ApplyInfo();
+        
+        foi.type = tempType;
+        if (tempType.Equals("target")) { 
+            dm.SetMaterial(TargetMat);
+            //dm.SetAudioFeedback(Sounds[])
+        } else {
+            dm.SetMaterial(ObstacleMat);
+            //dm.SetAudioFeedback(Sounds[])
+        }
+
+        //dm.targetJoints = HitJoints;
+
+        targetInstance.transform.SetParent(transform);
         
         return targetInstance.GetComponent<FloorObjectInfo>();
     }

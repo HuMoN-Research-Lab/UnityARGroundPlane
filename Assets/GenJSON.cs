@@ -18,13 +18,21 @@ public class GenJSON : MonoBehaviour
     [SerializeField]
     private GameObject AllTargetSpawners;
 
-    void FindTargetSpawner(Scene scene, LoadSceneMode mode) 
+    void FindTargetSpawner() 
     {
         AllTargetSpawners = GameObject.Find("SpawnTiles");
     }
 
+    void Update() {
+        FindTargetSpawner();
+        if (Input.GetKeyDown(KeyCode.K)) SaveTrial();
+    }
 
-    void Awake()
+    void Awake() {
+        
+    }
+
+    public void SaveTrial()
     {
         //write whole json file from children
         //Open new writer for file for this trial
