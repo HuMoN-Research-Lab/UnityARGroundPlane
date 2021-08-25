@@ -19,11 +19,12 @@ public class JSONReader : MonoBehaviour
     private List<FloorObjectInfo> floorObjects;
 
     // Start is called before the first frame update
-    void Awake() {
+    public void StartUp(string filePath) {
+        Debug.Log(filePath);
         // grab first JSON file from DataOutput
         // test w/ C:\Users\Matthis Lab\Documents\GitHub\UnityARGroundPlane\DataOutput\1629814433_Trial_1.json
         // TODO: Grab iteratively
-        StreamReader reader = new StreamReader("DataOutput/1629814433_Trial_1.json");
+        StreamReader reader = new StreamReader(filePath);
         floorObjects = new List<FloorObjectInfo>();
         // serialize; ignore first item, loop through rest and place until line read is '[' - make this a function to call for scene switching
         ParseJSONFile(reader);
@@ -85,7 +86,7 @@ public class JSONReader : MonoBehaviour
 
         //dm.targetJoints = HitJoints;
 
-        targetInstance.transform.SetParent(transform);
+        //targetInstance.transform.SetParent(transform);
         
         return targetInstance.GetComponent<FloorObjectInfo>();
     }

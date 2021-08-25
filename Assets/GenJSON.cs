@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 //using QualisysRealTime.Unity; // eventually we'll want this TDW
@@ -40,12 +41,14 @@ public class GenJSON : MonoBehaviour
 
         System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
         int cur_time = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
+        string vis_text = GameObject.Find("DropdownVis").GetComponentInChildren<Text>().text;
+        string bio_text = GameObject.Find("DropdownBio").GetComponentInChildren<Text>().text;
         try {
-            writer = new StreamWriter("DataOutput/" + cur_time + "_Trial_" + TrialCount + ".json");
+            writer = new StreamWriter("DataOutput/" + cur_time + "_Trial_" + TrialCount + "_" + vis_text + "_" + bio_text + ".json");
         } catch {
             //create /DataOutput
             Directory.CreateDirectory("DataOutput");
-            writer = new StreamWriter("DataOutput/" + cur_time + "_Trial_" + TrialCount + ".json");
+            writer = new StreamWriter("DataOutput/" + cur_time + "_Trial_" + TrialCount + "_" + vis_text + "_" + bio_text + ".json");
         }
         TrialCount++;
         writer.WriteLine("[");
