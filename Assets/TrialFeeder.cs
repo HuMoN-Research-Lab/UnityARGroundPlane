@@ -20,10 +20,10 @@ public class TrialFeeder : MonoBehaviour
     private Dictionary<int, string> condDict;
     private List<int> RandomBlockOrder = null;
 
+    private List<int> BlockNumberList = null;
+
     void Awake() {
-        List<int> BlockNumberList = new List<int>(BlockNumber);
         
-        RandomBlockOrder = BlockNumberList.OrderBy( x => Random.value ).ToList();
         // RandomBlockOrder needs to be established once, awake re-establishes it every initialization.
         // TDW/SER /\ 2021-08-25
         condDict = new Dictionary<int, string>();
@@ -34,23 +34,23 @@ public class TrialFeeder : MonoBehaviour
         condDict.Add(3, "visEasy_bioHard");
         condDict.Add(4, "visHard_bioEasy");
         condDict.Add(5, "visHard_bioMedium");
-        condDict.Add(6, "visHard_bioHard");
-
-        dir = new DirectoryInfo("DataInput");
-        //files = dir.GetFiles("*.json");
-        Debug.Log(BlockCounter);
-        files = dir.GetFiles("*" + condDict[RandomBlockOrder[BlockCounter]] + ".json");
+        condDict.Add(6, "visHard_bioHard"); 
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        List<int> BlockNumberList = new List<int>(BlockNumber);
+        RandomBlockOrder = BlockNumberList.OrderBy( x => Random.value ).ToList();
         SceneManager.sceneLoaded += OnSceneLoaded;
         //Debug.Log(RandomBlockOrder[0]);
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-
+        dir = new DirectoryInfo("DataInput");
+        //files = dir.GetFiles("*.json");
+        Debug.Log("Block Counter: " + BlockCounter + "\nCondition: " + condDict[RandomBlockOrder[BlockCounter]]);
+        files = dir.GetFiles("*" + condDict[RandomBlockOrder[BlockCounter]] + ".json");
 
         if (TrialNumber < files.Length) {
            spawnTiles.StartUp("DataInput/" + files[TrialNumber].Name);
@@ -58,6 +58,7 @@ public class TrialFeeder : MonoBehaviour
         } else if (TrialNumber == files.Length){
             BlockCounter += 1;
             TrialNumber = 0;
+            OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
         }
         
     }

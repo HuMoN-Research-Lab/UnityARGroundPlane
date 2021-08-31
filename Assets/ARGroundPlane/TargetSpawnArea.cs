@@ -14,7 +14,7 @@ public class TargetSpawnArea : MonoBehaviour
     [Tooltip("Number of Targets")]
     [SerializeField]
     private int NumberOfTargets= 0;
-    public Color TargetTestColor = Color.black;
+    //public Color TargetTestColor = Color.black;
 
     [Range (1, 20)]
     [Tooltip("This specifies the number of Obstacles, the rest will be targets.")]

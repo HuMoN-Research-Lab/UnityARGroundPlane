@@ -20,7 +20,7 @@ public class JSONReader : MonoBehaviour
 
     // Start is called before the first frame update
     public void StartUp(string filePath) {
-        Debug.Log(filePath);
+        //Debug.Log(filePath);
         // grab first JSON file from DataOutput
         // test w/ C:\Users\Matthis Lab\Documents\GitHub\UnityARGroundPlane\DataOutput\1629814433_Trial_1.json
         // TODO: Grab iteratively
