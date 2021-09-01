@@ -44,11 +44,11 @@ public class GenJSON : MonoBehaviour
         string vis_text = GameObject.Find("DropdownVis").GetComponentInChildren<Text>().text;
         string bio_text = GameObject.Find("DropdownBio").GetComponentInChildren<Text>().text;
         try {
-            writer = new StreamWriter("DataOutput/" + cur_time + "_Trial_" + TrialCount + "_" + vis_text + "_" + bio_text + ".json");
+            writer = new StreamWriter("DataOutput/0000_Trial_" + TrialCount + "_" + vis_text + "_" + bio_text + ".json");
         } catch {
             //create /DataOutput
             Directory.CreateDirectory("DataOutput");
-            writer = new StreamWriter("DataOutput/" + cur_time + "_Trial_" + TrialCount + "_" + vis_text + "_" + bio_text + ".json");
+            writer = new StreamWriter("DataOutput/0000_Trial_" + TrialCount + "_" + vis_text + "_" + bio_text + ".json");
         }
         TrialCount++;
         writer.WriteLine("[");

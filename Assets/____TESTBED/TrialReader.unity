@@ -1229,6 +1229,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TrialNumber: 0
   spawnTiles: {fileID: 1341086295}
+  blockTrialOutput: {fileID: 866144557}
+  RandomBlockOrder: 
 --- !u!4 &690939174
 Transform:
   m_ObjectHideFlags: 0
@@ -1254,13 +1256,14 @@ GameObject:
   - component: {fileID: 866144556}
   - component: {fileID: 866144558}
   - component: {fileID: 866144559}
+  - component: {fileID: 866144557}
   m_Layer: 0
   m_Name: DataOutput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &866144556
 Transform:
   m_ObjectHideFlags: 0
@@ -1275,6 +1278,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866144557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866144555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a85293780d8ed47917f8e2209784e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trialFeeder: {fileID: 690939173}
 --- !u!114 &866144558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,7 +1310,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866144555}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ff6f293786e3954fbfcc52c11fdaaff, type: 3}
   m_Name: 
@@ -2983,7 +2999,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7673208015517689827}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6eb9704473362ce4b8ace8e4587cf919, type: 3}
   m_Name: 
