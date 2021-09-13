@@ -1155,7 +1155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452112541}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 7.36, y: -1.142, z: 0}
+  m_LocalPosition: {x: 7.548, y: -1.142, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5442739366739184948}
@@ -1175,8 +1175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
   machineName: DESKTOP-8TRUE6K
-  width: 3.73
-  height: 2.08
+  width: 3.83
+  height: 2.13
   head: {fileID: 7773729278615165803}
   useXRCameras: 0
   useRenderTextures: 0
@@ -1724,13 +1724,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955482998}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -1.475, y: 0, z: 0.465}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2130287956}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &955483000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1738,13 +1738,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955482998}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa55f93f2f1a6184eb4f383351bef5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: LeftFoot_
-  PositionOffset: {x: -1.475, y: 0, z: 0.465}
+  ObjectName: LFrame
+  PositionOffset: {x: 0.353, y: 0, z: -0.949}
   RotationOffset: {x: 0, y: 0, z: 0}
   useObjectOrientation: 1
   visibleMarkers: 1
@@ -1756,7 +1756,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955482998}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 961c4d7c7936b2441b30e3479ee07580, type: 3}
   m_Name: 
@@ -2672,7 +2672,8 @@ MonoBehaviour:
     type: 3}
   TargetWidth: 0.15
   ObstacleMat: {fileID: 2100000, guid: 1192e0353a379bf45b528b60b361aa4b, type: 2}
-  TargetMat: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
+  TargetMatEasy: {fileID: 2100000, guid: 14dc47edd53c61547979ab4f2e188762, type: 2}
+  TargetMatHard: {fileID: 2100000, guid: 746c8e561d1065a4bbb3c186a586fc83, type: 2}
 --- !u!1 &1554488874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3104,7 +3105,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899222302}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.027, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3114,7 +3115,7 @@ Transform:
   - {fileID: 19844052}
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1899222304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3327,7 +3328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2130287956
 Transform:
   m_ObjectHideFlags: 0
@@ -3481,8 +3482,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
   machineName: DESKTOP-8TRUE6K
-  width: 3.73
-  height: 2.08
+  width: 3.83
+  height: 2.13
   head: {fileID: 7773729278615165803}
   useXRCameras: 0
   useRenderTextures: 0
@@ -3534,7 +3535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638956667179099426}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 3.68, y: -1.142, z: 0}
+  m_LocalPosition: {x: 3.774, y: -1.142, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5442739366739184948}
@@ -3576,7 +3577,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7673208015517689827}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 1.143, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3584,7 +3585,7 @@ Transform:
   - {fileID: 7667474260909650663}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &7673169569715011671
 GameObject:
   m_ObjectHideFlags: 0
@@ -3723,8 +3724,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
   machineName: DESKTOP-8TRUE6K
-  width: 3.73
-  height: 2.08
+  width: 3.83
+  height: 2.13
   head: {fileID: 7773729278615165803}
   useXRCameras: 0
   useRenderTextures: 0

@@ -14,7 +14,7 @@ public class JSONReader : MonoBehaviour
     [SerializeField]
     private float TargetWidth = 0.1f;
 
-    public Material ObstacleMat, TargetMat;
+    public Material ObstacleMat, TargetMatEasy, TargetMatHard;
 
     private List<FloorObjectInfo> floorObjects;
 
@@ -77,7 +77,10 @@ public class JSONReader : MonoBehaviour
         
         foi.type = tempType;
         if (tempType.Equals("target")) { 
-            dm.SetMaterial(TargetMat);
+            if (GameObject.Find("ReadTiles").GetComponent<TrialFeeder>().IsVisHard())
+                dm.SetMaterial(TargetMatHard);
+            else
+                dm.SetMaterial(TargetMatEasy);
             //dm.SetAudioFeedback(Sounds[])
         } else {
             dm.SetMaterial(ObstacleMat);

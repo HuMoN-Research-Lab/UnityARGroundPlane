@@ -22,6 +22,8 @@ public class FloorObjectInfo : MonoBehaviour
 
     public void ApplyInfo() {
         transform.position = position;
-        transform.rotation.eulerAngles.Set(transform.rotation.eulerAngles.x, yRotation, transform.rotation.eulerAngles.z);
+        //transform.rotation.eulerAngles.Set(transform.rotation.eulerAngles.x, yRotation, transform.rotation.eulerAngles.z);
+        transform.rotation = Quaternion.Euler(0f, yRotation, 0f);
+        Debug.Log(transform.rotation.eulerAngles);
     }
 }

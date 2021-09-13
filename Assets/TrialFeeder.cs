@@ -109,4 +109,8 @@ public class TrialFeeder : MonoBehaviour
             spawnTiles = GameObject.Find("SpawnTiles").GetComponent<JSONReader>();
         }
     }
+
+    public bool IsVisHard() {
+        return condDict[RandomBlockOrder[BlockCounter]].Contains("visHard");
+    }
 }
