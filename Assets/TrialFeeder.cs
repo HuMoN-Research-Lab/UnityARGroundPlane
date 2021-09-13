@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Linq;
 
@@ -22,6 +23,12 @@ public class TrialFeeder : MonoBehaviour
     public List<int> RandomBlockOrder = null;
 
     private List<int> BlockNumberList = null;
+
+    public Text BlockLabel;
+    public Text TrialLabel;
+    public Text ConditionLabel;
+
+    public GameObject SwitchBoxes;
 
     void Awake() {
         
@@ -60,16 +67,35 @@ public class TrialFeeder : MonoBehaviour
         
         //files = dir.GetFiles("*.json");
         Debug.Log("Block Counter: " + BlockCounter + "\nCondition: " + condDict[RandomBlockOrder[BlockCounter]]);
+
+        BlockLabel.text = "[";
+        for (int i = 0; i < RandomBlockOrder.Count; i++) {
+            BlockLabel.text += ("" + RandomBlockOrder[i]);
+            if (i != RandomBlockOrder.Count-1) BlockLabel.text += (",");
+        }
+        BlockLabel.text += "]";
+
+        TrialLabel.text = "" + (TrialNumber+1);
+        ConditionLabel.text = condDict[RandomBlockOrder[BlockCounter]];
+
         files = dir.GetFiles("*" + condDict[RandomBlockOrder[BlockCounter]] + ".json");
 
         if (TrialNumber < files.Length) {
-           spawnTiles.StartUp("DataInput/" + files[TrialNumber].Name);
+            spawnTiles.StartUp("DataInput/" + files[TrialNumber].Name);
+            System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
+            int epoch = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
+            blockTrialOutput.WriteString("[\"" + files[TrialNumber].Name + "\", " + epoch + "]\n");
             TrialNumber += 1;
         } else if (TrialNumber == files.Length){
             BlockCounter += 1;
             TrialNumber = 0;
-            if (BlockCounter > condDict.Count()) {
-                blockTrialOutput.CloseWriter();
+            if (BlockCounter >= condDict.Count()) {
+                // END of run through, turn off endings?
+                System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
+                int epoch = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
+                blockTrialOutput.WriteString("[" + epoch + "]");
+
+                SwitchBoxes.SetActive(false);
             }
             OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
         }

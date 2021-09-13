@@ -8,16 +8,12 @@ public class BlockTrialOutput : MonoBehaviour
 
     public TrialFeeder trialFeeder;
 
-    private bool starting = true;
+    private int subjectID = -1;
 
     StreamWriter writer = null;
     
     
     void Awake() {
-        if (starting) {
-            writer = new StreamWriter("Subject_X_TrialOrder.json");
-            starting = false;
-        }
         // happens start of each trial
         
     }
@@ -25,7 +21,16 @@ public class BlockTrialOutput : MonoBehaviour
     void Start()
     {
         // place random block order as first line
-        writer.WriteLine(trialFeeder.RandomBlockOrder);
+        System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
+        subjectID = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
+        writer = new StreamWriter("DataOutput/Subject_" + subjectID + "_TrialOrder.json");
+        writer.Write("[");
+        for (int i = 0; i < trialFeeder.RandomBlockOrder.Count; i++) {
+            writer.Write("" + trialFeeder.RandomBlockOrder[i]);
+            if (i != trialFeeder.RandomBlockOrder.Count-1) writer.Write(",");
+        }
+        writer.WriteLine("]");
+        writer.Close();
     }
 
     // Update is called once per frame
@@ -34,7 +39,7 @@ public class BlockTrialOutput : MonoBehaviour
         
     }
 
-    public void CloseWriter() {
-        writer.Close();
+    public void WriteString(string s) {
+        File.AppendAllText("DataOutput/Subject_" + subjectID + "_TrialOrder.json", s);
     }
 }
