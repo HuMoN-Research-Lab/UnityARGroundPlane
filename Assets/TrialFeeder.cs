@@ -35,6 +35,8 @@ public class TrialFeeder : MonoBehaviour
     public float TrialSeconds = 5f;
     private bool failed = false;
 
+    private IEnumerator TrialTimerCoroutine;
+
     void Awake() {
         
         // RandomBlockOrder needs to be established once, awake re-establishes it every initialization.
@@ -65,11 +67,15 @@ public class TrialFeeder : MonoBehaviour
         foreach (FileInfo fi in allFiles) {
             System.IO.File.Move("DataInput/" + fi.Name, "DataInput/" + Random.Range(1000, 9999) + fi.Name.Substring(4));
         }
+
+        TrialTimerCoroutine = FailTrial(TrialSeconds);
         
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        StopCoroutine(TrialTimerCoroutine);
         SwitchBoxes.SetActive(true);
+        TrialFailBlock.SetActive(false);
         //files = dir.GetFiles("*.json");
         Debug.Log("Block Counter: " + BlockCounter + "\nCondition: " + condDict[RandomBlockOrder[BlockCounter]]);
 
@@ -90,7 +96,7 @@ public class TrialFeeder : MonoBehaviour
             System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
             int epoch = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
             blockTrialOutput.WriteString("[\"" + files[TrialNumber].Name + "\", " + epoch + "]\n");
-            StartCoroutine(FailTrial(TrialSeconds));
+            StartCoroutine(TrialTimerCoroutine);
             TrialNumber += 1;
         } else if (TrialNumber == files.Length){
             BlockCounter += 1;
@@ -115,13 +121,22 @@ public class TrialFeeder : MonoBehaviour
             spawnTiles = GameObject.Find("SpawnTiles").GetComponent<JSONReader>();
         }
 
+        if (TrialFailBlock == null) {
+            TrialFailBlock = GameObject.Find("TrialFail");
+        }
+
         if (failed) {
             if (Input.GetKeyDown(KeyCode.Space)) {
                 //reprint line in file
+                System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
+                int epoch = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
+                blockTrialOutput.WriteString("[\"" + files[TrialNumber].Name + "\", " + epoch + "]\n");
                 //turn off fail block
+                TrialFailBlock.SetActive(false);
                 //turn on ending hitboxes
-
+                SwitchBoxes.SetActive(true);
                 failed = false;
+                StartCoroutine(TrialTimerCoroutine);
             }
         }
     }
