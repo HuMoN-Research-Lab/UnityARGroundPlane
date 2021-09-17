@@ -14,6 +14,6 @@ public class ReloadSceneOnHit : MonoBehaviour
 
     void Update() {
         // testing
-        if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.Space)) OnTriggerEnter(null);
+        if (Input.GetKeyDown(KeyCode.F)) OnTriggerEnter(null);
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using System.Timers;
 
 public class TrialFeeder : MonoBehaviour
 {
@@ -29,6 +30,10 @@ public class TrialFeeder : MonoBehaviour
     public Text ConditionLabel;
 
     public GameObject SwitchBoxes;
+
+    public GameObject TrialFailBlock;
+    public float TrialSeconds = 5f;
+    private bool failed = false;
 
     void Awake() {
         
@@ -64,7 +69,7 @@ public class TrialFeeder : MonoBehaviour
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-        
+        SwitchBoxes.SetActive(true);
         //files = dir.GetFiles("*.json");
         Debug.Log("Block Counter: " + BlockCounter + "\nCondition: " + condDict[RandomBlockOrder[BlockCounter]]);
 
@@ -85,6 +90,7 @@ public class TrialFeeder : MonoBehaviour
             System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
             int epoch = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
             blockTrialOutput.WriteString("[\"" + files[TrialNumber].Name + "\", " + epoch + "]\n");
+            StartCoroutine(FailTrial(TrialSeconds));
             TrialNumber += 1;
         } else if (TrialNumber == files.Length){
             BlockCounter += 1;
@@ -108,9 +114,26 @@ public class TrialFeeder : MonoBehaviour
         if (spawnTiles == null) {
             spawnTiles = GameObject.Find("SpawnTiles").GetComponent<JSONReader>();
         }
+
+        if (failed) {
+            if (Input.GetKeyDown(KeyCode.Space)) {
+                //reprint line in file
+                //turn off fail block
+                //turn on ending hitboxes
+
+                failed = false;
+            }
+        }
     }
 
     public bool IsVisHard() {
         return condDict[RandomBlockOrder[BlockCounter]].Contains("visHard");
+    }
+
+    IEnumerator FailTrial(float time) {
+        yield return new WaitForSeconds(time);
+        failed = true;
+        TrialFailBlock.SetActive(true);
+        SwitchBoxes.SetActive(false);
     }
 }
