@@ -8,6 +8,7 @@ public class DontDestroyTrialFailOnLoad : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+        gameObject.SetActive(false);
         if (selfRef == null)
             selfRef = this;
         else
