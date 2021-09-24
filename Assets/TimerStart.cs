@@ -10,15 +10,16 @@ public class TimerStart : MonoBehaviour
     public TrialFeeder main;
     
     bool beenHit = false;
+    float lastHitTime = -1f;
     void OnTriggerEnter(Collider other) {
         if (!beenHit) {
             if (other == null || other.gameObject.name.Contains("TDW") || other.gameObject.GetComponentInParent<RTObjectMarkers>()) {
                 beenHit = true;
+                lastHitTime = Time.time;
+                Debug.Log("TimerStart");
                 main.StartTiming();
             }
         }
-
-        beenHit = false;
     }
 
     // Update is called once per frame
@@ -26,6 +27,10 @@ public class TimerStart : MonoBehaviour
     {
         if (main == null) {
             main = GameObject.Find("ReadTiles").GetComponent<TrialFeeder>();
+        }
+
+        if (Time.time - lastHitTime > 10) {
+            beenHit = false;
         }
 
         if (Input.GetKeyDown(KeyCode.T)) {

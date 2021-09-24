@@ -106,7 +106,7 @@ public class TrialFeeder : MonoBehaviour
                 SwitchBoxes.SetActive(false);
                 timing = false;
             }
-           // OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
+           OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
         }
         
     }
