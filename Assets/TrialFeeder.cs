@@ -120,8 +120,9 @@ public class TrialFeeder : MonoBehaviour
             if (BlockCounter >= condDict.Count()) {
                 SwitchBoxes.SetActive(false);
                 timing = false;
+            } else {
+                OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
             }
-            OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
         }
         
     }

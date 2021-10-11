@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/____TESTBED/TrialGenerator.unity
     guid: c7cbca753610d244a8a083c85182da07
-  - enabled: 0
+  - enabled: 1
     path: Assets/____TESTBED/TrialReader.unity
     guid: 44eca27f5aad38c45bc7aabe5e5f7769
-  - enabled: 1
+  - enabled: 0
     path: Assets/____TESTBED/Setup.unity
     guid: 64a0ede03403e1c45bf73a3e4a8016a7
   m_configObjects: {}
