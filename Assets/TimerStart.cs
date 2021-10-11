@@ -16,7 +16,8 @@ public class TimerStart : MonoBehaviour
             if (other == null || other.gameObject.name.Contains("TDW") || other.gameObject.GetComponentInParent<RTObjectMarkers>()) {
                 beenHit = true;
                 lastHitTime = Time.time;
-                Debug.Log("TimerStart");
+                //Debug.Log("TimerStart");
+                gameObject.GetComponent<AudioSource>().Play();
                 main.StartTiming();
             }
         }
