@@ -29,7 +29,7 @@ public class BlockTrialOutput : MonoBehaviour
             writer.Write("" + trialFeeder.RandomBlockOrder[i]);
             if (i != trialFeeder.RandomBlockOrder.Count-1) writer.Write(",");
         }
-        //writer.WriteLine("]");
+        writer.WriteLine();
         writer.Close();
     }
 

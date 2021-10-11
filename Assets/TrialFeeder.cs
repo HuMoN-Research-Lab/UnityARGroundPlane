@@ -50,6 +50,7 @@ public class TrialFeeder : MonoBehaviour
         condDict = new Dictionary<int, string>();
 
         // create a dictionary of condition names
+        condDict.Add(0, "Free-Walk");
         condDict.Add(1, "visEasy_bioEasy");
         condDict.Add(2, "visEasy_bioMedium");
         condDict.Add(3, "visEasy_bioHard");
@@ -167,9 +168,9 @@ public class TrialFeeder : MonoBehaviour
         failed = false;
         timing = false;
         //handle 0 block
-        blockTrialOutput.WriteString("\"" + 
-            ((RandomBlockOrder[BlockCounter] == 0) ? "Free-Walk" : files[TrialNumber].Name) 
-        + "\", ");
+        string outputStr = ((RandomBlockOrder[BlockCounter] == 0) ? "Free-Walk" : files[TrialNumber].Name);
+        Debug.Log(outputStr);
+        blockTrialOutput.WriteString("\"" + outputStr + "\", ");
     }
 
     public void StartTiming() {
