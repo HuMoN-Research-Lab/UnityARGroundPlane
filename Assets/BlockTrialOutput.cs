@@ -23,13 +23,13 @@ public class BlockTrialOutput : MonoBehaviour
         // place random block order as first line
         System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
         subjectID = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
-        writer = new StreamWriter("DataOutput/Subject_" + subjectID + "_TrialOrder.json");
-        writer.Write("[");
+        writer = new StreamWriter("DataOutput/Subject_" + subjectID + "_TrialOrder.csv");
+        //writer.Write("[");
         for (int i = 0; i < trialFeeder.RandomBlockOrder.Count; i++) {
             writer.Write("" + trialFeeder.RandomBlockOrder[i]);
             if (i != trialFeeder.RandomBlockOrder.Count-1) writer.Write(",");
         }
-        writer.WriteLine("]");
+        //writer.WriteLine("]");
         writer.Close();
     }
 
@@ -40,6 +40,6 @@ public class BlockTrialOutput : MonoBehaviour
     }
 
     public void WriteString(string s) {
-        File.AppendAllText("DataOutput/Subject_" + subjectID + "_TrialOrder.json", s);
+        File.AppendAllText("DataOutput/Subject_" + subjectID + "_TrialOrder.csv", s);
     }
 }

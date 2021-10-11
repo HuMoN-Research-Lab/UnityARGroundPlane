@@ -27,6 +27,7 @@ public class TrialFeeder : MonoBehaviour
 
     public Text BlockLabel;
     public Text TrialLabel;
+    public Text BlockNum;
     public Text ConditionLabel;
 
     public Text TimerLabel;
@@ -39,6 +40,8 @@ public class TrialFeeder : MonoBehaviour
     private float startTime = 0;
 
     private bool timing = false;
+
+    public int NumFreeWalkTrials = 21;
 
     void Awake() {
         
@@ -60,6 +63,7 @@ public class TrialFeeder : MonoBehaviour
     {
         List<int> BlockNumberList = new List<int>(BlockNumber);
         RandomBlockOrder = BlockNumberList.OrderBy( x => Random.value ).ToList();
+        RandomBlockOrder.Insert(0, 0);
         SceneManager.sceneLoaded += OnSceneLoaded;
         //SceneManager.sceneUnloaded += StopTiming;
         //Debug.Log(RandomBlockOrder[0]);
@@ -80,22 +84,32 @@ public class TrialFeeder : MonoBehaviour
         //files = dir.GetFiles("*.json");
         //Debug.Log("Block Counter: " + BlockCounter + "\nCondition: " + condDict[RandomBlockOrder[BlockCounter]]);
 
-        BlockLabel.text = "[";
+        BlockLabel.text = "";
         for (int i = 0; i < RandomBlockOrder.Count; i++) {
             BlockLabel.text += ("" + RandomBlockOrder[i]);
             if (i != RandomBlockOrder.Count-1) BlockLabel.text += (",");
         }
-        BlockLabel.text += "]";
 
+        BlockNum.text = "" + RandomBlockOrder[BlockCounter];
         TrialLabel.text = "" + (TrialNumber+1);
         ConditionLabel.text = condDict[RandomBlockOrder[BlockCounter]];
 
-        files = dir.GetFiles("*" + condDict[RandomBlockOrder[BlockCounter]] + ".json");
 
-        if (TrialNumber < files.Length) {
+        //handle 0 block
+        if (RandomBlockOrder[BlockCounter] != 0)
+            files = dir.GetFiles("*" + condDict[RandomBlockOrder[BlockCounter]] + ".json");
+
+        if (RandomBlockOrder[BlockCounter] == 0) {
+            if (TrialNumber < NumFreeWalkTrials) {
+                TrialReset();
+                TrialNumber += 1;
+            } else {
+                BlockCounter += 1;
+                TrialNumber = 0;
+                OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
+            }
+        } else if (TrialNumber < files.Length) {
             spawnTiles.StartUp("DataInput/" + files[TrialNumber].Name);
-            System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
-            int epoch = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
             //blockTrialOutput.WriteString("[\"" + files[TrialNumber].Name + "\", " + epoch + "]\n");
             TrialReset();
             TrialNumber += 1;
@@ -106,7 +120,7 @@ public class TrialFeeder : MonoBehaviour
                 SwitchBoxes.SetActive(false);
                 timing = false;
             }
-           OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
+            OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
         }
         
     }
@@ -139,6 +153,8 @@ public class TrialFeeder : MonoBehaviour
 
     void FailTrial() {
         failed = true;
+        gameObject.GetComponent<AudioSource>().Play();
+        blockTrialOutput.WriteString("null\n");
         TrialFailBlock.SetActive(true);
         SwitchBoxes.SetActive(false);
     }
@@ -150,7 +166,10 @@ public class TrialFeeder : MonoBehaviour
         SwitchBoxes.SetActive(true);
         failed = false;
         timing = false;
-        blockTrialOutput.WriteString("[\"" + files[TrialNumber].Name + "\", ");
+        //handle 0 block
+        blockTrialOutput.WriteString("\"" + 
+            ((RandomBlockOrder[BlockCounter] == 0) ? "Free-Walk" : files[TrialNumber].Name) 
+        + "\", ");
     }
 
     public void StartTiming() {
@@ -163,9 +182,11 @@ public class TrialFeeder : MonoBehaviour
     }
 
     public void StopTiming() {
-        timing = false;
-        System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
-        int epoch = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
-        blockTrialOutput.WriteString(epoch + "]\n");
+        if (timing) {
+            timing = false;
+            System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
+            int epoch = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
+            blockTrialOutput.WriteString(epoch + "\n");
+        }
     }
 }

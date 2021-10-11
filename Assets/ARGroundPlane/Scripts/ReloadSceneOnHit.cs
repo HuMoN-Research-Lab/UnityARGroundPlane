@@ -17,6 +17,7 @@ public class ReloadSceneOnHit : MonoBehaviour
             if (other == null || other.gameObject.name.Contains("TDW") || other.gameObject.GetComponentInParent<RTObjectMarkers>()) {
                 beenHit = true;
                 lastHitTime = Time.time;
+                gameObject.GetComponent<AudioSource>().Play();
                 main.StopTiming();
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
