@@ -8,6 +8,8 @@ public class ReloadSceneOnHit : MonoBehaviour
 {
     public TrialFeeder main;
 
+    public AudioSource TrialEndSound;
+
     bool beenHit = false;
 
     float lastHitTime = -1f;
@@ -17,7 +19,7 @@ public class ReloadSceneOnHit : MonoBehaviour
             if (other == null || other.gameObject.name.Contains("TDW") || other.gameObject.GetComponentInParent<RTObjectMarkers>()) {
                 beenHit = true;
                 lastHitTime = Time.time;
-                gameObject.GetComponent<AudioSource>().Play();
+                TrialEndSound.Play();
                 main.StopTiming();
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
