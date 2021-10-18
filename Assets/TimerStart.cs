@@ -30,7 +30,7 @@ public class TimerStart : MonoBehaviour
             main = GameObject.Find("ReadTiles").GetComponent<TrialFeeder>();
         }
 
-        if (Time.time - lastHitTime > 10) {
+        if (Time.time - lastHitTime > 5) {
             beenHit = false;
         }
 
