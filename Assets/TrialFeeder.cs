@@ -87,7 +87,7 @@ public class TrialFeeder : MonoBehaviour
 
         BlockLabel.text = "";
         for (int i = 0; i < RandomBlockOrder.Count; i++) {
-            BlockLabel.text += ("" + RandomBlockOrder[i]);
+            BlockLabel.text += ("" + condDict[RandomBlockOrder[i]]);
             if (i != RandomBlockOrder.Count-1) BlockLabel.text += (",");
         }
 
