@@ -1703,7 +1703,7 @@ MonoBehaviour:
   SwitchBoxes: {fileID: 1899222302}
   TrialFailBlock: {fileID: 1744559372}
   TrialSeconds: 10
-  NumFreeWalkTrials: 2
+  NumFreeWalkTrials: 1
 --- !u!4 &690939174
 Transform:
   m_ObjectHideFlags: 0

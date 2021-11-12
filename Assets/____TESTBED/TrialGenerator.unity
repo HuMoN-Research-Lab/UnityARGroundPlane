@@ -1501,6 +1501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53aea5b693e335b4080ce4fe9e1f16d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  main: {fileID: 0}
+  TrialEndSound: {fileID: 0}
 --- !u!54 &240621677
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5296,6 +5298,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53aea5b693e335b4080ce4fe9e1f16d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  main: {fileID: 0}
+  TrialEndSound: {fileID: 0}
 --- !u!54 &1743889229
 Rigidbody:
   m_ObjectHideFlags: 0
