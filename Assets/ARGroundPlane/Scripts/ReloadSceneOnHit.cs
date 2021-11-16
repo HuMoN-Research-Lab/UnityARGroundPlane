@@ -15,7 +15,7 @@ public class ReloadSceneOnHit : MonoBehaviour
     float lastHitTime = -1f;
 
     void OnTriggerEnter(Collider other) {
-        if (!beenHit) {
+        if (!beenHit && main.timing) {
             if (other == null || other.gameObject.name.Contains("TDW") || other.gameObject.GetComponentInParent<RTObjectMarkers>()) {
                 beenHit = true;
                 lastHitTime = Time.time;
@@ -31,7 +31,7 @@ public class ReloadSceneOnHit : MonoBehaviour
             main = GameObject.Find("ReadTiles").GetComponent<TrialFeeder>();
         }
 
-        if (Time.time - lastHitTime > 2) {
+        if (Time.time - lastHitTime > 4) {
             beenHit = false;
         }
         // testing

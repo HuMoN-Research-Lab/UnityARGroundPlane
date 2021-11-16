@@ -39,7 +39,7 @@ public class TrialFeeder : MonoBehaviour
     private bool failed = false;
     private float startTime = 0;
 
-    private bool timing = false;
+    public bool timing = false;
 
     public int NumFreeWalkTrials = 21;
 
