@@ -14,16 +14,16 @@ public class TrialFeeder : MonoBehaviour
     FileInfo[] files;
 
     public int TrialNumber = 0;
-    private int[] BlockNumber = {1, 2, 3, 4, 5, 6};   
-    private int BlockCounter = 0;
+    //private int[] BlockNumber = {1, 2, 3, 4, 5, 6};   
+    //private int BlockCounter = 0;
     // every 20 trials, add 1 to block counter
     public JSONReader spawnTiles;
     public BlockTrialOutput blockTrialOutput;
 
     public Dictionary<int, string> condDict;
-    public List<int> RandomBlockOrder = null;
+    //public List<int> RandomBlockOrder = null;
 
-    private List<int> BlockNumberList = null;
+    //private List<int> BlockNumberList = null;
 
     public Text BlockLabel;
     public Text TrialLabel;
@@ -35,6 +35,8 @@ public class TrialFeeder : MonoBehaviour
     public GameObject SwitchBoxes;
 
     public GameObject TrialFailBlock;
+
+    public GameObject BlockEndFlag;
     public float TrialSeconds = 5f;
     private bool failed = false;
     private float startTime = 0;
@@ -62,9 +64,9 @@ public class TrialFeeder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        List<int> BlockNumberList = new List<int>(BlockNumber);
-        RandomBlockOrder = BlockNumberList.OrderBy( x => Random.value ).ToList();
-        RandomBlockOrder.Insert(0, 0);
+        //List<int> BlockNumberList = new List<int>(BlockNumber);
+        //RandomBlockOrder = BlockNumberList.OrderBy( x => Random.value ).ToList();
+        //RandomBlockOrder.Insert(0, 0);
         SceneManager.sceneLoaded += OnSceneLoaded;
         //SceneManager.sceneUnloaded += StopTiming;
         //Debug.Log(RandomBlockOrder[0]);
@@ -85,44 +87,43 @@ public class TrialFeeder : MonoBehaviour
         //files = dir.GetFiles("*.json");
         //Debug.Log("Block Counter: " + BlockCounter + "\nCondition: " + condDict[RandomBlockOrder[BlockCounter]]);
 
-        BlockLabel.text = "";
-        for (int i = 0; i < RandomBlockOrder.Count; i++) {
-            BlockLabel.text += ("" + condDict[RandomBlockOrder[i]]);
-            if (i != RandomBlockOrder.Count-1) BlockLabel.text += (",");
-        }
+        // BlockLabel.text = "";
+        // for (int i = 0; i < RandomBlockOrder.Count; i++) {
+        //     BlockLabel.text += ("" + condDict[RandomBlockOrder[i]]);
+        //     if (i != RandomBlockOrder.Count-1) BlockLabel.text += (",");
+        // }
 
-        BlockNum.text = "" + RandomBlockOrder[BlockCounter];
+        //BlockNum.text = "" + RandomBlockOrder[BlockCounter];
         TrialLabel.text = "" + (TrialNumber+1);
-        ConditionLabel.text = condDict[RandomBlockOrder[BlockCounter]];
+        ConditionLabel.text = condDict[GlobalBlockNum.SelectedBlock];
 
+        if (GlobalBlockNum.SelectedBlock != 0)
+            files = dir.GetFiles("*" + condDict[GlobalBlockNum.SelectedBlock] + ".json");
 
-        //handle 0 block
-        if (RandomBlockOrder[BlockCounter] != 0)
-            files = dir.GetFiles("*" + condDict[RandomBlockOrder[BlockCounter]] + ".json");
-
-        if (RandomBlockOrder[BlockCounter] == 0) {
+        if (GlobalBlockNum.SelectedBlock == 0) {
             if (TrialNumber < NumFreeWalkTrials) {
                 TrialReset();
                 TrialNumber += 1;
             } else {
-                BlockCounter += 1;
-                TrialNumber = 0;
-                OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
+                // activate block complete text
+                BlockEndFlag.SetActive(true);
             }
         } else if (TrialNumber < files.Length) {
             spawnTiles.StartUp("DataInput/" + files[TrialNumber].Name);
             //blockTrialOutput.WriteString("[\"" + files[TrialNumber].Name + "\", " + epoch + "]\n");
             TrialReset();
             TrialNumber += 1;
-        } else if (TrialNumber == files.Length){
-            BlockCounter += 1;
-            TrialNumber = 0;
-            if (BlockCounter >= condDict.Count()) {
-                SwitchBoxes.SetActive(false);
-                timing = false;
-            } else {
-                OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
-            }
+        } else if (TrialNumber >= files.Length){
+            BlockEndFlag.SetActive(true);
+            //TrialNumber = 0;
+            // if (BlockCounter >= condDict.Count()) {
+            //     SwitchBoxes.SetActive(false);
+            //     timing = false;
+            // } else {
+            //     OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
+            // }
+            SwitchBoxes.SetActive(false);
+            timing = false;
         }
         
     }
@@ -150,7 +151,7 @@ public class TrialFeeder : MonoBehaviour
     }
 
     public bool IsVisHard() {
-        return condDict[RandomBlockOrder[BlockCounter]].Contains("visHard");
+        return condDict[GlobalBlockNum.SelectedBlock].Contains("visHard");
     }
 
     void FailTrial() {
@@ -169,7 +170,7 @@ public class TrialFeeder : MonoBehaviour
         failed = false;
         timing = false;
         //handle 0 block
-        string outputStr = ((RandomBlockOrder[BlockCounter] == 0) ? "Free-Walk" : files[TrialNumber].Name);
+        string outputStr = ((GlobalBlockNum.SelectedBlock == 0) ? "Free-Walk" : files[TrialNumber].Name);
         Debug.Log(outputStr);
         blockTrialOutput.WriteString("\"" + outputStr + "\", ");
     }
