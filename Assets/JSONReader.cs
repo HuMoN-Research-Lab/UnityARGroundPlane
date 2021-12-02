@@ -19,7 +19,7 @@ public class JSONReader : MonoBehaviour
     private List<FloorObjectInfo> floorObjects;
 
     // Start is called before the first frame update
-    public void StartUp(string filePath) {
+    public void StartUp(string filePath, bool isFlipped, GameObject RotatePoint) {
         Debug.Log(filePath);
         // grab first JSON file from DataOutput
         // test w/ C:\Users\Matthis Lab\Documents\GitHub\UnityARGroundPlane\DataOutput\1629814433_Trial_1.json
@@ -27,11 +27,11 @@ public class JSONReader : MonoBehaviour
         StreamReader reader = new StreamReader(filePath);
         floorObjects = new List<FloorObjectInfo>();
         // serialize; ignore first item, loop through rest and place until line read is '[' - make this a function to call for scene switching
-        ParseJSONFile(reader);
+        ParseJSONFile(reader, isFlipped, RotatePoint);
     }
 
     // Update is called once per frame
-    public FloorObjectInfo CreateFromJSON(string jString) {
+    public FloorObjectInfo CreateFromJSON(string jString, bool isFlipped, GameObject RotatePoint) {
         //{"position":{"x":-1.2431681156158448,"y":0.0010050020646303893,"z":-0.4258761405944824},"yRotation":0.0,"type":"obstacle"}
         char[] separators = new char[] { '{', '}', ':', ',', '"' };
         string[] brokenLine = jString.Split(separators, System.StringSplitOptions.RemoveEmptyEntries);
@@ -73,7 +73,7 @@ public class JSONReader : MonoBehaviour
 
         foi.position = tempPosition;
         foi.yRotation = tempYRot;
-        foi.ApplyInfo();
+        foi.ApplyInfo(isFlipped, RotatePoint);
         
         foi.type = tempType;
         if (tempType.Equals("target")) { 
@@ -94,7 +94,7 @@ public class JSONReader : MonoBehaviour
         return targetInstance.GetComponent<FloorObjectInfo>();
     }
 
-    private void ParseJSONFile(StreamReader sr) {
+    private void ParseJSONFile(StreamReader sr, bool isFlipped, GameObject RotatePoint) {
         sr.ReadLine(); // always '[' to start
         sr.ReadLine(); // always timestamp
         string line;
@@ -102,7 +102,7 @@ public class JSONReader : MonoBehaviour
             //remove comma
             line = line.Remove(line.Length-1);
             //call 'Create...' and add to list
-            floorObjects.Add(CreateFromJSON(line));
+            floorObjects.Add(CreateFromJSON(line, isFlipped, RotatePoint));
         }
 
     }

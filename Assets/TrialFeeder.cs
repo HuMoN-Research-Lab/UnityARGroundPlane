@@ -37,6 +37,7 @@ public class TrialFeeder : MonoBehaviour
     public GameObject TrialFailBlock;
 
     public GameObject BlockEndFlag;
+    public GameObject RotatePoint;
     public float TrialSeconds = 5f;
     private bool failed = false;
     private float startTime = 0;
@@ -84,6 +85,7 @@ public class TrialFeeder : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
         SwitchBoxes.SetActive(true);
         TrialFailBlock.SetActive(false);
+        BlockEndFlag.SetActive(false);
         //files = dir.GetFiles("*.json");
         //Debug.Log("Block Counter: " + BlockCounter + "\nCondition: " + condDict[RandomBlockOrder[BlockCounter]]);
 
@@ -107,23 +109,28 @@ public class TrialFeeder : MonoBehaviour
             } else {
                 // activate block complete text
                 BlockEndFlag.SetActive(true);
+                SwitchBoxes.SetActive(false);
+                timing = false;
             }
-        } else if (TrialNumber < files.Length) {
-            spawnTiles.StartUp("DataInput/" + files[TrialNumber].Name);
-            //blockTrialOutput.WriteString("[\"" + files[TrialNumber].Name + "\", " + epoch + "]\n");
-            TrialReset();
-            TrialNumber += 1;
-        } else if (TrialNumber >= files.Length){
-            BlockEndFlag.SetActive(true);
-            //TrialNumber = 0;
-            // if (BlockCounter >= condDict.Count()) {
-            //     SwitchBoxes.SetActive(false);
-            //     timing = false;
-            // } else {
-            //     OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
-            // }
-            SwitchBoxes.SetActive(false);
-            timing = false;
+        } else {
+            if (TrialNumber < files.Length) {
+                bool flipTrial = TrialNumber%2 == 0;
+                spawnTiles.StartUp("DataInput/" + files[TrialNumber].Name, flipTrial, RotatePoint);
+                //blockTrialOutput.WriteString("[\"" + files[TrialNumber].Name + "\", " + epoch + "]\n");
+                TrialReset();
+                TrialNumber += 1;
+            } else {//if (TrialNumber >= files.Length){
+                BlockEndFlag.SetActive(true);
+                //TrialNumber = 0;
+                // if (BlockCounter >= condDict.Count()) {
+                //     SwitchBoxes.SetActive(false);
+                //     timing = false;
+                // } else {
+                //     OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
+                // }
+                SwitchBoxes.SetActive(false);
+                timing = false;
+            }
         }
         
     }
@@ -139,6 +146,14 @@ public class TrialFeeder : MonoBehaviour
 
         if (TrialFailBlock == null) {
             TrialFailBlock = GameObject.Find("TrialFail");
+        }
+
+        if (BlockEndFlag == null) {
+            BlockEndFlag = GameObject.Find("BlockEnd");
+        }
+
+        if (RotatePoint == null) {
+            RotatePoint = GameObject.Find("RotatePoint");
         }
 
         if (failed) {
@@ -159,12 +174,14 @@ public class TrialFeeder : MonoBehaviour
         gameObject.GetComponent<AudioSource>().Play();
         blockTrialOutput.WriteString("null\n");
         TrialFailBlock.SetActive(true);
+        BlockEndFlag.SetActive(false);
         SwitchBoxes.SetActive(false);
     }
 
     void TrialReset() {
         //turn off fail block
         TrialFailBlock.SetActive(false);
+        BlockEndFlag.SetActive(false);
         //turn on ending hitboxes
         SwitchBoxes.SetActive(true);
         failed = false;

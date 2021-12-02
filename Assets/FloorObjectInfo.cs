@@ -20,10 +20,11 @@ public class FloorObjectInfo : MonoBehaviour
         type = name;
     }
 
-    public void ApplyInfo() {
+    public void ApplyInfo(bool isFlipped, GameObject rotatePoint) {
         transform.position = position;
+        if (isFlipped) transform.RotateAround(rotatePoint.transform.position, Vector3.up, 180);
         //transform.rotation.eulerAngles.Set(transform.rotation.eulerAngles.x, yRotation, transform.rotation.eulerAngles.z);
-        transform.rotation = Quaternion.Euler(0f, yRotation, 0f);
+        transform.rotation = Quaternion.Euler(0f, yRotation + (isFlipped?180:0), 0f);
         //Debug.Log(transform.rotation.eulerAngles);
     }
 }
