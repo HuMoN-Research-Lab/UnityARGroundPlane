@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 4587301665434838937}
   - component: {fileID: 6151985733333458697}
   - component: {fileID: 5369861315143258169}
-  - component: {fileID: 4345197357634207576}
   m_Layer: 0
   m_Name: PilotTarget
   m_TagString: Untagged
@@ -256,15 +255,3 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   yRotation: 0
   type: 0
---- !u!114 &4345197357634207576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689040456923597035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52559e03acd47c34e9cfb9e466fb618d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

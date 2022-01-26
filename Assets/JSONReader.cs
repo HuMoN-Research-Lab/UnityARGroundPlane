@@ -16,6 +16,9 @@ public class JSONReader : MonoBehaviour
 
     public Material ObstacleMat, TargetMatEasy, TargetMatHard;
 
+    public bool placingInteractiveC = true;
+    private bool tempCisPlaced = false;
+
     private List<FloorObjectInfo> floorObjects;
 
     // Start is called before the first frame update
@@ -35,7 +38,6 @@ public class JSONReader : MonoBehaviour
         //{"position":{"x":-1.2431681156158448,"y":0.0010050020646303893,"z":-0.4258761405944824},"yRotation":0.0,"type":"obstacle"}
         char[] separators = new char[] { '{', '}', ':', ',', '"' };
         string[] brokenLine = jString.Split(separators, System.StringSplitOptions.RemoveEmptyEntries);
-        //Debug.Log(brokenLine);
         Vector3 tempPosition = new Vector3();
         float tempYRot = 0.0f;
         string tempType = "";
@@ -79,9 +81,27 @@ public class JSONReader : MonoBehaviour
         if (tempType.Equals("target")) { 
             if (GameObject.Find("ReadTiles").GetComponent<TrialFeeder>().IsVisHard())
                 dm.SetMaterial(TargetMatHard);
+                if (placingInteractiveC && !tempCisPlaced) {
+                    //We have a string holding a script name
+                    string ScriptName = "SubjectProximityReaction";
+                    //We need to fetch the Type
+                    System.Type MyScriptType = System.Type.GetType (ScriptName + ",Assembly-CSharp");
+                    //Now that we have the Type we can use it to Add Component
+                    dm.gameObject.AddComponent (MyScriptType);
+                    
+                    //inefficiently grab the script we just placed
+                    SubjectProximityReaction spr = dm.GetComponent<SubjectProximityReaction>();
+                    //set moving subject
+                    //spr.
+                    //set both materials
+                }
             else
                 dm.SetMaterial(TargetMatEasy);
-            //dm.SetAudioFeedback(Sounds[])
+                if (placingInteractiveC && !tempCisPlaced) {
+                    //place script
+                    //set moving subject
+                    //set both materials
+                }
         } else {
             dm.SetMaterial(ObstacleMat);
             //dm.SetAudioFeedback(Sounds[])
